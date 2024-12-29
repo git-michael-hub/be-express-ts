@@ -1,0 +1,11 @@
+psql -U your_username -d your_database
+
+
+
+SELECT * FROM information_schema.tables;
+
+DROP TABLE "users"
+
+SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email" FROM "user" "User";
+
+SELECT * FROM "tasks";

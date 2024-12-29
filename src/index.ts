@@ -1,0 +1,63 @@
+import express, { Request, Response } from 'express';
+import dotenv from "dotenv";
+import cors from 'cors';
+import http from 'http';
+import webrtcConnect  from './webrtc/connection';
+import userRoutes from "./routes/user.routes";
+import taskRoutes from "./routes/task.routes";
+
+
+
+
+dotenv.config();
+
+// Basic HTTP server with Express only
+const APP = express();
+
+const HOST = process.env.HOST ?? 'localhost';
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+
+APP.use(
+    cors({
+        origin: 'http://localhost:4200', // Allow only this origin
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],       // Allowed methods
+        allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    })
+);
+
+
+/**
+ * Create an HTTP
+ * WebSocket (e.g., Socket.IO) support
+ * Combining Express with HTTPS
+ * Custom server-level logic
+ */
+const SERVER = http.createServer(APP);
+
+// webrtc connection
+webrtcConnect(
+    SERVER,
+    {
+        cors: {
+        origin: "http://localhost:4200", // Allow your frontend's origin
+        methods: ["GET", "POST"]
+        }
+    }
+);
+
+
+APP.get('/', (req: Request, res: Response) => {
+    res.send('Hello, TypeScript with Express.js edited ni try!');
+});
+  
+
+// Middleware
+APP.use(express.json());
+
+// Routes
+APP.use("/api/users", userRoutes);
+APP.use("/api/tasks", taskRoutes);
+
+SERVER.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
