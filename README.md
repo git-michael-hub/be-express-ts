@@ -8,8 +8,8 @@ npx tsc --init // create tsconfig.json
 nodemon.json // for hot reloading
 
 "scripts": {
-    "start": "node dist/index.js",
-    "dev": "nodemon --watch src --exec ts-node ./src/index.ts", // watch code changes
+    "start": "node dist/main.js",
+    "dev": "nodemon --watch src --exec ts-node ./src/main.ts", // watch code changes
     "build": "tsc" // compile code to dist/
 },
 

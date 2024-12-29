@@ -6,6 +6,11 @@ import webrtcConnect  from './webrtc/connection';
 import userRoutes from "./routes/user.routes";
 import taskRoutes from "./routes/task.routes";
 
+import swaggerUi from "swagger-ui-express";
+import swaggerJsdoc from "swagger-jsdoc";
+import swaggerConfig from "./config/swagger";
+
+const SPECS = swaggerJsdoc(swaggerConfig);
 
 
 
@@ -53,6 +58,7 @@ APP.get('/', (req: Request, res: Response) => {
 
 // Middleware
 APP.use(express.json());
+APP.use("/api-docs", swaggerUi.serve, swaggerUi.setup(SPECS));
 
 // Routes
 APP.use("/api/users", userRoutes);

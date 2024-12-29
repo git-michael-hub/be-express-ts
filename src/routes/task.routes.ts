@@ -6,14 +6,59 @@ import { Request, Response } from "express";
 
 const router = Router();
 
-// Get all tasks
+/**
+ * @swagger
+ * tags:
+ *   - name: Task
+ *     description: API for managing tasks
+ */
+
+
+/**
+ * @swagger
+ * /api/tasks/:
+ *   get:
+ *     tags:
+ *       - Task
+ *     summary: Get all tasks
+ *     responses:
+ *       200:
+ *         description: A list of tasks
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Task'
+ */
+
 router.get("/", async (req, res) => {
   const taskRepository = AppDataSource.getRepository(Task);
   const tasks = await taskRepository.find();
   res.json(tasks);
 });
 
-// Create a new task
+/**
+ * @swagger
+ * /api/tasks/:
+ *   post:
+ *     tags:
+ *       - Task
+ *     summary: Create a new task
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Task'
+ *     responses:
+ *       201:
+ *         description: Task created successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Task'
+ */
 router.post("/", async (req, res) => {
   const taskRepository = AppDataSource.getRepository(Task);
   const newTask = taskRepository.create(req.body);
@@ -21,7 +66,35 @@ router.post("/", async (req, res) => {
   res.status(201).json(savedTask);
 });
 
-// Update an existing task
+/**
+ * @swagger
+ * /api/tasks/{id}:
+ *   put:
+ *     tags:
+ *       - Task
+ *     summary: Update an existing task
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Task'
+ *     responses:
+ *       200:
+ *         description: Task updated successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Task'
+ *       404:
+ *         description: Task not found
+ */
 router.put("/:id", async (req, res): Promise<any> => {
   const taskRepository = AppDataSource.getRepository(Task);
   const taskId = String(req.params.id);
@@ -47,7 +120,25 @@ router.put("/:id", async (req, res): Promise<any> => {
   }
 });
 
-// Delete an existing task
+/**
+ * @swagger
+ * /api/tasks/{id}:
+ *   delete:
+ *     tags:
+ *       - Task
+ *     summary: Delete an existing task
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Task deleted successfully
+ *       404:
+ *         description: Task not found
+ */
 router.delete("/:id", async (req, res): Promise<any> => {
   const taskRepository = AppDataSource.getRepository(Task);
   const taskId = String(req.params.id);
