@@ -17,6 +17,7 @@ export class Task {
   @Column({ type: 'enum', enum: ['low', 'medium', 'high'], default: 'high' })
   priority: 'low' | 'medium' | 'high';
 
+  // to delete in favor of status field
   @Column({ type: 'boolean', default: false })
   isCompleted: boolean;
 
@@ -28,6 +29,10 @@ export class Task {
 
   @UpdateDateColumn() // Automatically updates when a record is updated
   updatedAt: Date;
+
+  // status -> in progress, done, block, in review 
+
+  // isWatching -> if true, the user will notify on every update or comments
 }
 
 

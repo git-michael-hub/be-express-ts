@@ -19,6 +19,8 @@ dotenv.config();
 // Basic HTTP server with Express only
 const APP = express();
 
+APP.use(express.json());
+
 const HOST = process.env.HOST ?? 'localhost';
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
 
@@ -57,7 +59,6 @@ APP.get('/', (req: Request, res: Response) => {
   
 
 // Middleware
-APP.use(express.json());
 APP.use("/api-docs", swaggerUi.serve, swaggerUi.setup(SPECS));
 
 // Routes

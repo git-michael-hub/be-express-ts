@@ -3,8 +3,22 @@ import { AppDataSource } from "../data-source";
 import { User } from "../entities/User";
 import { Task } from "../entities/Task";
 import { Request, Response } from "express";
+import { body, param, validationResult } from "express-validator";
 
 const router = Router();
+
+/**
+ * Utility function to handle validation errors
+ */
+const handleValidationErrors = (req: any, res: any, next: any) => {
+  console.log('BODY____REQUEST;', req.body)
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.mapped() });
+  }
+  next();
+};
+
 
 /**
  * @swagger
@@ -31,11 +45,18 @@ const router = Router();
  *               items:
  *                 $ref: '#/components/schemas/Task'
  */
-
 router.get("/", async (req, res) => {
-  const taskRepository = AppDataSource.getRepository(Task);
-  const tasks = await taskRepository.find();
-  res.json(tasks);
+  console.log('[GET] List of tasks');
+
+  try {
+    const taskRepository = AppDataSource.getRepository(Task);
+    const tasks = await taskRepository.find();
+    res.status(200).json(tasks);
+  } 
+  catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal server error", error: error.message });
+  }
 });
 
 /**
@@ -58,13 +79,38 @@ router.get("/", async (req, res) => {
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Task'
+ *       400:
+ *         description: Validation error
  */
-router.post("/", async (req, res) => {
-  const taskRepository = AppDataSource.getRepository(Task);
-  const newTask = taskRepository.create(req.body);
-  const savedTask = await taskRepository.save(newTask);
-  res.status(201).json(savedTask);
-});
+router.post(
+  "/", 
+  [
+    body("title").isString().notEmpty().withMessage("Title is required"),
+    body("description").optional().isString(),
+    body("date")
+      .isISO8601()
+      .toDate()
+      .withMessage("Date must be in ISO 8601 format"),
+    body("priority").isIn(["low", "medium", "high"]).withMessage("Invalid priority value"),
+    body("isCompleted").optional().isBoolean(),
+    body("isArchive").optional().isBoolean(),
+    handleValidationErrors,
+  ],
+  async (req, res) => {
+    console.log('[POST] Add a task');
+    
+    try {
+      const taskRepository = AppDataSource.getRepository(Task);
+      const newTask = taskRepository.create(req.body);
+      const savedTask = await taskRepository.save(newTask);
+      res.status(201).json(savedTask);
+    } 
+    catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Internal server error", error: error.message });
+    }
+  }
+);
 
 /**
  * @swagger
@@ -92,33 +138,55 @@ router.post("/", async (req, res) => {
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Task'
+ *       400:
+ *         description: Validation error
  *       404:
  *         description: Task not found
  */
-router.put("/:id", async (req, res): Promise<any> => {
-  const taskRepository = AppDataSource.getRepository(Task);
-  const taskId = String(req.params.id);
+router.put(
+  "/:id",
+  [
+    param("id").isUUID().withMessage("Invalid ID format"),
+    body("title").optional().isString(),
+    body("description").optional().isString(),
+    body("date")
+      .optional()
+      .isISO8601()
+      .toDate()
+      .withMessage("Date must be in ISO 8601 format"),
+    body("priority").optional().isIn(["low", "medium", "high"]).withMessage("Invalid priority value"),
+    body("isCompleted").optional().isBoolean(),
+    body("isArchive").optional().isBoolean(),
+    handleValidationErrors,
+  ], 
+  async (req, res): Promise<any> => {
+    console.log('[PUT] Update a task');
 
-  try {
-    // Find the task by ID
-    const existingTask = await taskRepository.findOneBy({ id: taskId });
+    try {
+      const taskRepository = AppDataSource.getRepository(Task);
+      const taskId = String(req.params.id);
 
-    if (!existingTask) {
-      return res.status(404).json({ message: "Task not found" });
+      // Find the task by ID
+      const existingTask = await taskRepository.findOneBy({ id: taskId });
+
+      if (!existingTask) {
+        return res.status(404).json({ message: "Task not found" });
+      }
+
+      // Update the task with new data
+      const updatedTask = taskRepository.merge(existingTask, req.body);
+
+      // Save the updated task
+      const savedTask = await taskRepository.save(updatedTask);
+
+      res.status(200).json(savedTask);
+    } 
+    catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Internal server error", error: error.message });
     }
-
-    // Update the task with new data
-    const updatedTask = taskRepository.merge(existingTask, req.body);
-
-    // Save the updated task
-    const savedTask = await taskRepository.save(updatedTask);
-
-    res.status(200).json(savedTask);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "Error updating user", error: error.message });
   }
-});
+);
 
 /**
  * @swagger
@@ -139,27 +207,34 @@ router.put("/:id", async (req, res): Promise<any> => {
  *       404:
  *         description: Task not found
  */
-router.delete("/:id", async (req, res): Promise<any> => {
-  const taskRepository = AppDataSource.getRepository(Task);
-  const taskId = String(req.params.id);
+router.delete(
+  "/:id",
+  [param("id").isUUID().withMessage("Invalid ID format"), handleValidationErrors], 
+  async (req, res): Promise<any> => {
+    console.log('[DELETE] Delete a task');
 
-  try {
-    // Find the task by ID
-    const existingTask = await taskRepository.findOneBy({ id: taskId });
+    try {
+      const taskRepository = AppDataSource.getRepository(Task);
+      const taskId = String(req.params.id);
 
-    if (!existingTask) {
-      return res.status(404).json({ message: "Task not found" });
+      // Find the task by ID
+      const existingTask = await taskRepository.findOneBy({ id: taskId });
+
+      if (!existingTask) {
+        return res.status(404).json({ message: "Task not found" });
+      }
+
+      // Remove the task
+      await taskRepository.remove(existingTask);
+
+      res.status(200).json({ message: "Task deleted successfully" });
+    } 
+    catch (error) {
+      console.error(error);
+      res.status(500).json({ message: "Internal server error", error: error.message });
     }
-
-    // Remove the task
-    await taskRepository.remove(existingTask);
-
-    res.status(200).json({ message: "Task deleted successfully" });
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: "Error deleting task", error: error.message });
   }
-});
+);
 
 
 export default router;

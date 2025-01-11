@@ -22,8 +22,8 @@ volumes:
 
 
 
-docker build -t express-ts-app .
-docker run -p 3000:3000 express-ts-app
+docker build -t be-expressjs-ts .
+docker run -p 3000:3000 be-expressjs-ts
 
 or 
 
