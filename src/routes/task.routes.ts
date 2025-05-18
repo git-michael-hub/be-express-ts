@@ -204,6 +204,10 @@ router.put(
  *     responses:
  *       200:
  *         description: Task deleted successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Task'
  *       404:
  *         description: Task not found
  */
@@ -227,7 +231,10 @@ router.delete(
       // Remove the task
       await taskRepository.remove(existingTask);
 
-      res.status(200).json({ message: "Task deleted successfully" });
+      res.status(200).json({
+        ...existingTask,
+        id: taskId
+      });
     } 
     catch (error) {
       console.error(error);

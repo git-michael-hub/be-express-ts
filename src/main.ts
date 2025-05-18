@@ -65,6 +65,8 @@ APP.use("/api-docs", swaggerUi.serve, swaggerUi.setup(SPECS));
 APP.use("/api/users", userRoutes);
 APP.use("/api/tasks", taskRoutes);
 
+//  '0.0.0.0'
 SERVER.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    // console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });

@@ -38,3 +38,7 @@ migration generate
 migation run
 
 seeder
+
+
+Swagger Docu
+http://localhost:3000/api-docs/#/

@@ -9,3 +9,4 @@ DROP TABLE "users"
 SELECT "User"."id" AS "User_id", "User"."name" AS "User_name", "User"."email" AS "User_email" FROM "user" "User";
 
 SELECT * FROM "tasks";
+DELETE FROM "tasks";

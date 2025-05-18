@@ -1,0 +1,44 @@
+{
+  "family": "express-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "containerDefinitions": [
+    {
+      "name": "express-container",
+      "image": "463810118442.dkr.ecr.us-east-1.amazonaws.com/be-expressjs-ts-app:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000
+        }
+      ],
+      "environment": [
+        { "name": "NODE_ENV", "value": "production" },
+        { "name": "DB_HOST", "value": "db" },
+        { "name": "DB_PORT", "value": "5432" },
+        { "name": "DB_USER", "value": "postgres" },
+        { "name": "DB_PASSWORD", "value": "changeit" },
+        { "name": "DB_NAME", "value": "my_database" }
+      ]
+    },
+    {
+      "name": "postgres-container",
+      "image": "463810118442.dkr.ecr.us-east-1.amazonaws.com/be-expressjs-ts-app-db:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5432,
+          "hostPort": 5432
+        }
+      ],
+      "environment": [
+        { "name": "POSTGRES_USER", "value": "postgres" },
+        { "name": "POSTGRES_PASSWORD", "value": "changeit" },
+        { "name": "POSTGRES_DB", "value": "my_database" }
+      ]
+    }
+  ]
+}

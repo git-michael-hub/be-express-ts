@@ -12,7 +12,7 @@ export class Task {
   description: string;
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  date: Date;
+  dueDate: Date;
 
   @Column({ type: 'enum', enum: ['low', 'medium', 'high'], default: 'high' })
   priority: 'low' | 'medium' | 'high';
@@ -33,6 +33,10 @@ export class Task {
   // status -> in progress, done, block, in review 
 
   // isWatching -> if true, the user will notify on every update or comments
+
+  // level -> level of difficulties or work duration
+
+  // due date
 }
 
 
