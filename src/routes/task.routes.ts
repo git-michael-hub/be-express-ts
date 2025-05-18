@@ -87,7 +87,7 @@ router.post(
   [
     body("title").isString().notEmpty().withMessage("Title is required"),
     body("description").optional().isString(),
-    body("date")
+    body("dueDate")
       .isISO8601()
       .toDate()
       .withMessage("Date must be in ISO 8601 format"),
@@ -149,7 +149,7 @@ router.put(
     param("id").isUUID().withMessage("Invalid ID format"),
     body("title").optional().isString(),
     body("description").optional().isString(),
-    body("date")
+    body("dueDate")
       .optional()
       .isISO8601()
       .toDate()
