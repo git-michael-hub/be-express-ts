@@ -17,7 +17,7 @@ const SPECS = swaggerJsdoc(swaggerConfig);
 dotenv.config();
 
 // Basic HTTP server with Express only
-const APP = express();
+export const APP = express();
 
 APP.use(express.json());
 
@@ -64,6 +64,7 @@ APP.use("/api-docs", swaggerUi.serve, swaggerUi.setup(SPECS));
 // Routes
 APP.use("/api/users", userRoutes);
 APP.use("/api/tasks", taskRoutes);
+APP.use("/api/projects", taskRoutes);
 
 //  '0.0.0.0'
 SERVER.listen(PORT, () => {

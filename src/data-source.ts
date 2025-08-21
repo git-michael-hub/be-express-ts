@@ -1,6 +1,6 @@
 import { DataSource } from "typeorm";
-import { User } from "./entities/User";
-import Task from "./entities/Task";
+import { User, UserTest } from "./entities/User";
+import { Task, TaskTest } from "./entities/Task";
 
 
 export const AppDataSource = new DataSource({
@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME || 'my_database',
   synchronize: false, // Turn off auto-sync for migrations
   logging: true,
-  entities: [User, Task], // Path to your entities
+  entities: [User, UserTest, Task, TaskTest], // Path to your entities
   subscribers: [],
   migrations: ["src/migrations/*.ts"], // Path to your migrations folder
 });

@@ -46,5 +46,9 @@ export class Task {
   // occurence
 }
 
-
-export default Task;
+/**
+ * For test purposes
+ */
+@Entity({ name: 'task_tests' }) // Specifies the table name
+export class TaskTest extends Task {
+}

@@ -71,7 +71,7 @@ router.get("/", async (req, res) => {
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Task'
+ *             $ref: '#/components/schemas/TaskCreate'
  *     responses:
  *       201:
  *         description: Task created successfully
@@ -130,7 +130,7 @@ router.post(
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Task'
+ *             $ref: '#/components/schemas/TaskUpdate'
  *     responses:
  *       200:
  *         description: Task updated successfully
