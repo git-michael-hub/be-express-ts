@@ -101,7 +101,7 @@ router.post(
     
     try {
       const taskRepository = AppDataSource.getRepository(Task);
-      const newTask = taskRepository.create(req.body);
+      const newTask = taskRepository.create(req.body as Task);
       const savedTask = await taskRepository.save(newTask);
       res.status(201).json(savedTask);
     } 

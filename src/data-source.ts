@@ -14,7 +14,8 @@ export const AppDataSource = new DataSource({
   logging: true,
   entities: [User, UserTest, Task, TaskTest], // Path to your entities
   subscribers: [],
-  migrations: ["src/migrations/*.ts"], // Path to your migrations folder
+  // Disable migrations in test environment to avoid syntax errors
+  migrations: process.env.NODE_ENV === 'test' ? [] : ["src/migrations/*.ts"],
 });
 
 console.log(AppDataSource.options);

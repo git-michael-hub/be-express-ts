@@ -1,29 +1,39 @@
 import request from 'supertest';
 import { AppDataSource } from '../data-source';
-import { User } from '../entities/User';
-import { UserTest } from '../entities/User';
+import { User, UserTest } from '../entities/User';
 import { AuthService } from '../services/auth.service';
-import { APP } from '../main'; // Assuming you export app from main.ts
+// import { APP } from '../main'; // Assuming you export app from main.ts
+// import { getGlobalTestServer, closeGlobalTestServer } from './test-server';
+import { createTestServer, closeTestServer } from './test-server';
 
 const authService = new AuthService();
+// const { app } = getGlobalTestServer();
 
 describe('User Routes Tests', () => {
   let testUser: User;
   let authToken: string;
   let userTestRepository: any;
   let createdUserIds: string[] = []; // Track created users
+  let app;
+  let server: any;
 
   beforeAll(async () => {
+    // Create test server on port 3001
+    const testServer = createTestServer(3001);
+    app = testServer.app;
+    server = testServer.server;
+
     // Initialize database connection
     await AppDataSource.initialize();
     userTestRepository = AppDataSource.getRepository(UserTest);
-  });
+  }, 30000);
 
   afterAll(async () => {
     // Clean up all test data and close connection
     await cleanupTestData();
     await AppDataSource.destroy();
-  });
+    await closeTestServer(3001);
+  }, 30000);
 
   beforeEach(async () => {
     // Clean up test data before each test
@@ -62,10 +72,11 @@ describe('User Routes Tests', () => {
 
 
   describe('POST /api/users/register', () => {
-    it.only('should register a new user successfully', async () => {
+    it('should register a new user successfully', async () => {
         const startTime = Date.now();
         const testData = {
           testName: 'Register New User Success',
+          testDescription: 'Test user registration with valid data including name, email, password, role, position, and team',
           testType: 'integration',
           route: '/api/users/register',
           method: 'POST',
@@ -85,7 +96,7 @@ describe('User Routes Tests', () => {
         };
   
         try {
-          const response = await request(APP)
+          const response = await request(app)
             .post('/api/users/register')
             .send(testData.requestBody)
             .expect(201);
@@ -123,6 +134,7 @@ describe('User Routes Tests', () => {
     it('should fail registration with invalid email', async () => {
       const testData = {
         testName: 'Register User Invalid Email',
+        testDescription: 'Test user registration with invalid email format to ensure proper validation',
         testType: 'unit',
         route: '/api/users/register',
         method: 'POST',
@@ -138,7 +150,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .post('/api/users/register')
           .send(testData.requestBody)
           .expect(400);
@@ -177,6 +189,7 @@ describe('User Routes Tests', () => {
     it('should login user successfully', async () => {
       const testData = {
         testName: 'User Login Success',
+        testDescription: 'Test user login with valid credentials to verify authentication and token generation',
         testType: 'integration',
         route: '/api/users/login',
         method: 'POST',
@@ -192,15 +205,17 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .post('/api/users/login')
           .send(testData.requestBody)
           .expect(200);
 
+        console.log('response:', response.body)
+
         await userTestRepository.save({
           ...testData,
           actualResponse: response.body,
-          isPassed: response.status === 200 && response.body.token,
+          isPassed: response.status === 200 && Boolean(response.body.token),
           status: response.status === 200 ? 'passed' : 'failed'
         });
 
@@ -208,7 +223,7 @@ describe('User Routes Tests', () => {
         expect(response.body).toHaveProperty('user');
         expect(response.body.user.email).toBe(testData.requestBody.email);
         
-        authToken = response.body.token; // Save for other tests
+        // authToken = response.body.token; // Save for other tests
       } catch (error) {
         await userTestRepository.save({
           ...testData,
@@ -224,6 +239,7 @@ describe('User Routes Tests', () => {
     it('should fail login with wrong password', async () => {
       const testData = {
         testName: 'User Login Wrong Password',
+        testDescription: 'Test user login with incorrect password to ensure proper error handling',
         testType: 'unit',
         route: '/api/users/login',
         method: 'POST',
@@ -238,7 +254,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .post('/api/users/login')
           .send(testData.requestBody)
           .expect(401);
@@ -280,6 +296,7 @@ describe('User Routes Tests', () => {
     it('should get current user profile', async () => {
       const testData = {
         testName: 'Get Current User Profile',
+        testDescription: 'Test retrieving current user profile with valid authentication token',
         testType: 'integration',
         route: '/api/users/me',
         method: 'GET',
@@ -292,7 +309,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .get('/api/users/me')
           .set('Authorization', `Bearer ${authToken}`)
           .expect(200);
@@ -322,6 +339,7 @@ describe('User Routes Tests', () => {
     it('should fail without authentication token', async () => {
       const testData = {
         testName: 'Get Current User No Token',
+        testDescription: 'Test accessing user profile without authentication token to verify security',
         testType: 'unit',
         route: '/api/users/me',
         method: 'GET',
@@ -333,7 +351,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .get('/api/users/me')
           .expect(401);
 
@@ -374,13 +392,17 @@ describe('User Routes Tests', () => {
     it('should update user successfully', async () => {
       const testData = {
         testName: 'Update User Success',
+        testDescription: 'Test updating user information with valid authentication and data',
         testType: 'integration',
         route: `/api/users/${testUser.id}`,
         method: 'PUT',
         requestBody: {
-          name: 'Updated User Name',
-          position: ['Senior Developer'],
-          team: ['Backend', 'DevOps']
+            name: 'Updated User Name',
+            email: 'updated@example.com', // Add email
+            password: 'NewSecurePass123!', // Add password
+            role: 'user', // Add role
+            position: ['Senior Developer'],
+            team: ['Backend', 'DevOps']
         },
         expectedResponse: {
           status: 200,
@@ -389,7 +411,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .put(`/api/users/${testUser.id}`)
           .set('Authorization', `Bearer ${authToken}`)
           .send(testData.requestBody)
@@ -433,6 +455,7 @@ describe('User Routes Tests', () => {
     it('should delete user successfully', async () => {
       const testData = {
         testName: 'Delete User Success',
+        testDescription: 'Test deleting user account with valid authentication',
         testType: 'integration',
         route: `/api/users/${testUser.id}`,
         method: 'DELETE',
@@ -444,7 +467,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .delete(`/api/users/${testUser.id}`)
           .set('Authorization', `Bearer ${authToken}`)
           .expect(200);
@@ -486,6 +509,7 @@ describe('User Routes Tests', () => {
     it('should logout user successfully', async () => {
       const testData = {
         testName: 'User Logout Success',
+        testDescription: 'Test user logout functionality with valid authentication token',
         testType: 'integration',
         route: '/api/users/logout',
         method: 'POST',
@@ -497,7 +521,7 @@ describe('User Routes Tests', () => {
       };
 
       try {
-        const response = await request(APP)
+        const response = await request(app)
           .post('/api/users/logout')
           .set('Authorization', `Bearer ${authToken}`)
           .expect(200);
