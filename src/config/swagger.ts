@@ -136,6 +136,62 @@ const swaggerOptions: Options = {
                 }
               }
             },
+            Project: {
+              type: "object",
+              properties: {
+                id: { type: "string", format: "uuid", example: "2a1c6c6a-4bd4-4d5a-8a5e-0f5f0b3b9d3a" },
+                name: { type: "string", example: "E-commerce Platform" },
+                description: { type: "string", nullable: true, example: "Build a modern e-commerce platform with React and Node.js" },
+                dueDate: { type: "string", format: "date-time", nullable: true, example: "2024-12-31T23:59:59.000Z" },
+                members: { type: "array", items: { type: "string" }, example: ["user-id-1", "user-id-2", "user-id-3"] },
+                tasks: { type: "array", items: { type: "string" }, example: ["task-id-1", "task-id-2"] },
+                createdAt: { type: "string", format: "date-time", example: "2024-12-25T14:48:00.000Z" },
+                updatedAt: { type: "string", format: "date-time", example: "2024-12-25T14:48:00.000Z" }
+              }
+            },
+            ProjectCreate: {
+              type: "object",
+              required: ["name"],
+              properties: {
+                name: { type: "string", example: "E-commerce Platform" },
+                description: { type: "string", nullable: true, example: "Build a modern e-commerce platform" },
+                dueDate: { type: "string", format: "date-time", nullable: true, example: "2024-12-31T23:59:59.000Z" },
+                members: { type: "array", items: { type: "string" }, example: ["user-id-1", "user-id-2"] },
+                tasks: { type: "array", items: { type: "string" }, example: ["task-id-1"] }
+              }
+            },
+            ProjectUpdate: {
+              type: "object",
+              properties: {
+                name: { type: "string", example: "Updated E-commerce Platform" },
+                description: { type: "string", nullable: true, example: "Updated project description" },
+                dueDate: { type: "string", format: "date-time", nullable: true, example: "2025-01-15T23:59:59.000Z" },
+                members: { type: "array", items: { type: "string" }, example: ["user-id-1", "user-id-2", "user-id-4"] },
+                tasks: { type: "array", items: { type: "string" }, example: ["task-id-1", "task-id-2", "task-id-3"] }
+              }
+            },
+            ProjectMembersResponse: {
+              type: "object",
+              properties: {
+                members: {
+                  type: "array",
+                  items: { type: "string" },
+                  example: ["user-id-1", "user-id-2", "user-id-3"],
+                  description: "Array of user IDs who are members of the project"
+                }
+              }
+            },
+            ProjectTasksResponse: {
+              type: "object",
+              properties: {
+                tasks: {
+                  type: "array",
+                  items: { type: "string" },
+                  example: ["task-id-1", "task-id-2"],
+                  description: "Array of task IDs belonging to the project"
+                }
+              }
+            },
         }
     }
   },

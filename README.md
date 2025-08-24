@@ -34,10 +34,16 @@ docker compose up
 
 DB
 
-migration generate
-migation run
+npm run migration:generate
+npm run migration:run
 
 seeder
+
+
+Creation
+- entity
+- route
+- swagger.ts from config
 
 
 Swagger Docu
