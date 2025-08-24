@@ -39,6 +39,10 @@ npm run migration:run
 
 seeder
 
+// npx ts-node src/mock-data/generator/user_generator.ts
+// npx ts-node src/seeder/task.seed.ts
+npx ts-node src/mock-data/generator/project_generator.ts
+
 
 Creation
 - entity

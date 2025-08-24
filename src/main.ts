@@ -5,6 +5,7 @@ import http from 'http';
 import webrtcConnect  from './webrtc/connection';
 import userRoutes from "./routes/user.routes";
 import taskRoutes from "./routes/task.routes";
+import projectRoutes from "./routes/project.routes";
 
 import swaggerUi from "swagger-ui-express";
 import swaggerJsdoc from "swagger-jsdoc";
@@ -64,7 +65,7 @@ APP.use("/api-docs", swaggerUi.serve, swaggerUi.setup(SPECS));
 // Routes
 APP.use("/api/users", userRoutes);
 APP.use("/api/tasks", taskRoutes);
-APP.use("/api/projects", taskRoutes);
+APP.use("/api/projects", projectRoutes);
 
 //  '0.0.0.0'
 SERVER.listen(PORT, () => {

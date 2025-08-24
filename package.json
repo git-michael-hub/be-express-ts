@@ -12,7 +12,23 @@
     "test:coverage": "NODE_ENV=test jest --silent --coverage --runInBand",
     "test:ui": "NODE_ENV=test jest --silent --reporters=jest-html-reporter --runInBand",
     "test:watch": "NODE_ENV=test jest --watch --silent --runInBand",
-    "test:debug": "NODE_ENV=test jest --detectOpenHandles --forceExit --silent --runInBand"
+    "test:debug": "NODE_ENV=test jest --detectOpenHandles --forceExit --silent --runInBand",
+    "seed:tasks": "ts-node src/seeder/task.seed.ts seed",
+    "clear:tasks": "ts-node src/seeder/task.seed.ts clear",
+    "stats:tasks": "ts-node src/seeder/task.seed.ts stats",
+    "seed:tasks:force": "ts-node src/seeder/task.seed.ts seed --force",
+    "seed:users": "ts-node src/seeder/user.seed.ts seed",
+    "clear:users": "ts-node src/seeder/user.seed.ts clear",
+    "stats:users": "ts-node src/seeder/user.seed.ts stats",
+    "verify:users": "ts-node src/seeder/user.seed.ts verify",
+    "test-user": "ts-node src/seeder/user.seed.ts test-user",
+    "seed:users:force": "ts-node src/seeder/user.seed.ts seed --force",
+    "seed:projects": "ts-node src/seeder/project.seed.ts seed",
+    "clear:projects": "ts-node src/seeder/project.seed.ts clear",
+    "stats:projects": "ts-node src/seeder/project.seed.ts stats",
+    "validate:projects": "ts-node src/seeder/project.seed.ts validate",
+    "test-project": "ts-node src/seeder/project.seed.ts test-project",
+    "seed:projects:force": "ts-node src/seeder/project.seed.ts seed --force"
   },
   "keywords": [],
   "author": "",
@@ -30,7 +46,8 @@
     "socket.io": "^4.8.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
-    "typeorm": "^0.3.20"
+    "typeorm": "^0.3.20",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
