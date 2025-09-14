@@ -3,6 +3,7 @@ import { AppDataSource } from "../data-source";
 import { Project } from "../entities/Project";
 import { Request, Response } from "express";
 import { body, param, validationResult } from "express-validator";
+import { authenticateToken } from "../middlewares/auth.middleware";
 
 const router = Router();
 
@@ -42,7 +43,7 @@ const handleValidationErrors = (req: any, res: any, next: any) => {
  *               items:
  *                 $ref: '#/components/schemas/Project'
  */
-router.get("/", async (req, res) => {
+router.get("/", authenticateToken, async (req, res) => {
   console.log('[GET] List of projects');
 
   try {
@@ -81,7 +82,7 @@ router.get("/", async (req, res) => {
  *       404:
  *         description: Project not found
  */
-router.get("/:id/members", [
+router.get("/:id/members", authenticateToken, [
     param("id").isUUID().withMessage("Invalid ID format"),
     handleValidationErrors
   ], async (req, res) => {
@@ -130,7 +131,7 @@ router.get("/:id/members", [
    *       404:
    *         description: Project not found
    */
-  router.get("/:id/tasks", [
+  router.get("/:id/tasks", authenticateToken, [
     param("id").isUUID().withMessage("Invalid ID format"),
     handleValidationErrors
   ], async (req, res) => {
@@ -179,6 +180,7 @@ router.get("/:id/members", [
  */
 router.post(
   "/", 
+  authenticateToken,
   [
     body("name").isString().notEmpty().withMessage("Name is required"),
     body("description").optional().isString(),
@@ -242,6 +244,7 @@ router.post(
  */
 router.put(
   "/:id",
+  authenticateToken,
   [
     param("id").isUUID().withMessage("Invalid ID format"),
     body("name").optional().isString(),
@@ -311,6 +314,7 @@ router.put(
  */
 router.delete(
   "/:id",
+  authenticateToken,
   [param("id").isUUID().withMessage("Invalid ID format"), handleValidationErrors], 
   async (req, res): Promise<any> => {
     console.log('[DELETE] Delete a project');

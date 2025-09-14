@@ -22,6 +22,9 @@ export class User {
   @Column({ type: "boolean", default: false })
   isEmailVerified: boolean;
 
+  @Column({ type: "varchar", length: 255, nullable: true })
+  emailVerificationToken: string;
+
   @Column({ type: "timestamp", nullable: true })
   lastLoginAt: Date;
 
@@ -49,8 +52,9 @@ export class User {
   @BeforeInsert()
   @BeforeUpdate()
   async hashPassword() {
-    if (this.password && !this.password.startsWith('$2a$')) {
-      const saltRounds = 12; // Recommended for production
+    // Only hash if it's not already a bcrypt hash
+    if (this.password && !/^\$2[aby]\$\d{2}\$/.test(this.password)) {
+      const saltRounds = 12;
       this.password = await bcrypt.hash(this.password, saltRounds);
     }
   }

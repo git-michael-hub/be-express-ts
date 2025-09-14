@@ -1,0 +1,2003 @@
+[
+  {
+    "id": "77f90905-2a0f-4a3c-a268-fc000e956404",
+    "name": "E-commerce Platform Redesign",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-11-04T17:29:31.760Z",
+    "members": [
+      "6533cdd2-1552-4b56-b522-2c834ae9948e",
+      "e140cced-e31b-45e4-84f0-b3b78b987af0"
+    ],
+    "tasks": [
+      "3c5f3d4e-6fd5-490b-857a-2746b110f3f5",
+      "e18a964c-e7ce-417a-abcd-a041a373e1ac",
+      "fa711446-1c38-47d0-b5c8-be4870294afb",
+      "42fc4ceb-a045-4395-ba7f-48c274daeecb",
+      "54ba0b20-d18b-4e0d-9d81-81fe71c3cb48",
+      "3e599331-cf01-41cf-bc1c-453e578f7ba2",
+      "09837ce9-0b2f-4b0d-af2e-93b73be03dc5",
+      "10a314d5-35b7-49ca-a3ee-41c23ed3969a"
+    ],
+    "createdAt": "2024-01-15T03:24:47.929Z",
+    "updatedAt": "2024-02-08T10:23:59.242Z"
+  },
+  {
+    "id": "fb7430d5-0ae1-4187-913a-b97b95d83183",
+    "name": "Mobile App Development",
+    "description": "Create efficient data processing algorithms",
+    "dueDate": "2025-02-18T14:25:28.261Z",
+    "members": [
+      "8caddba3-5d5b-4352-aa56-1119b2085422",
+      "bd4c7b6b-6eae-4b22-9460-2b425705b8d5",
+      "473f42a2-e344-47f1-9524-055cc37f3e28",
+      "8044ff7e-bfa6-4610-92b8-0510b2a60640",
+      "47ba3b76-4dac-45c7-9b9d-a3386c668e65"
+    ],
+    "tasks": [
+      "53f38d0b-634a-4699-abc8-098dbb78455d",
+      "851770d4-64f5-4036-901b-cc0d057f6ddb",
+      "b8421073-945b-40e7-aeca-5d9244bffc4c",
+      "2d9e611b-4076-493a-b240-49fdd020d191",
+      "333df745-5b1e-44f0-b211-82751f944300",
+      "a387632a-83dc-4fec-b4ff-239d25f88466",
+      "42423e14-64c3-4331-a959-1edc832cc5cf"
+    ],
+    "createdAt": "2024-01-11T06:03:24.853Z",
+    "updatedAt": "2024-12-05T14:14:52.633Z"
+  },
+  {
+    "id": "078fa5fe-a018-4569-bc19-858b30aa644e",
+    "name": "Data Analytics Dashboard",
+    "description": "Develop user-friendly documentation and guides",
+    "dueDate": "2025-12-14T05:16:01.769Z",
+    "members": [
+      "bf171608-0079-42a5-88a5-273807671724",
+      "8ab5651a-ba84-4393-8b77-031a88120d0a",
+      "ce57bf7f-a1e9-43de-9181-ac5a0e24135e",
+      "1294e004-b496-43e1-93da-2f0cfe204c72",
+      "1cd45f93-6ea4-4e7c-95e8-4b7ccd477b93"
+    ],
+    "tasks": [
+      "bb3568b5-c5a2-435d-a8cc-1cde6d6b171e",
+      "062e4fb2-0a60-4bde-b6e1-6dd88452d3b4",
+      "16b72d96-f4df-4934-b337-35733018088a",
+      "f141b7c3-e8b7-484b-9e5d-5ebd7cd1a2b2",
+      "4b82e3e4-55f4-4c76-ae01-2dc5c98a5b16"
+    ],
+    "createdAt": "2024-01-12T14:19:49.039Z",
+    "updatedAt": "2024-07-30T21:50:52.932Z"
+  },
+  {
+    "id": "ea32832a-178e-4891-832f-437f0fe74cce",
+    "name": "API Gateway Implementation",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-01-11T04:49:13.151Z",
+    "members": [
+      "218a78af-9dfa-4b38-8bcd-d504ec4de09d",
+      "92fe7d7b-2f3a-42e9-afb5-cb266957a70e"
+    ],
+    "tasks": [
+      "44dde17c-db40-47a4-8e7c-cb88395271b0",
+      "e1f1c035-f440-4333-9e69-b66432c53d52"
+    ],
+    "createdAt": "2024-01-07T04:30:21.186Z",
+    "updatedAt": "2024-03-09T10:21:55.584Z"
+  },
+  {
+    "id": "5d35c85a-c5cd-470e-ab46-f06f55439b14",
+    "name": "Cloud Migration Project",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-02-02T10:33:59.238Z",
+    "members": [
+      "3338daf1-46f4-45f3-963e-2eacaaef9c11",
+      "5d5c1e51-0a88-49e5-92eb-f8cd92f2371d",
+      "f84a1eee-d0eb-4637-935e-d7c1b09c9fb9"
+    ],
+    "tasks": [
+      "cf59b596-4db0-412c-bef7-a10af666ce40",
+      "9c99c220-d949-4fb7-a5cf-18ec8fafbb1d",
+      "20719ec0-10d4-4223-b485-7d234e2fa9f0",
+      "4a283ce8-76a6-489e-8dec-d6d6acab62d2",
+      "cfb15d63-00b7-4a02-80fc-ac4cf2c92362",
+      "21809393-da9a-4bb9-bf7a-d70172db1101"
+    ],
+    "createdAt": "2024-01-05T11:14:42.434Z",
+    "updatedAt": "2024-08-24T23:52:35.553Z"
+  },
+  {
+    "id": "abd08498-7bf7-4a01-8039-fb1037aa7077",
+    "name": "Customer Portal Enhancement",
+    "description": "Design flexible configuration management system",
+    "dueDate": "2025-10-03T23:35:35.111Z",
+    "members": [
+      "b95d96c8-bf92-4fa4-b4d7-2d9fc99e518b",
+      "eae13f94-a5c9-4f66-bf72-c604e612443a",
+      "5adfdc70-feac-4344-a14c-ade31ddc2ace",
+      "e8b5d744-9885-4c25-b4a6-63251a9499e3",
+      "cf8b02e9-6929-46f9-9610-dbb37c282283"
+    ],
+    "tasks": [
+      "5d4ed106-dd1f-412e-b2ca-29a7ca070bf1",
+      "6e4144cc-15b6-4f8d-b184-0a232a248469",
+      "a97a51f4-e904-4239-bf47-fcc99e8adb63",
+      "e9ef9422-120b-4032-9b93-c1ff1eb80019",
+      "dacdf284-e97f-4806-9b99-1d48c26f61be"
+    ],
+    "createdAt": "2024-01-14T11:00:45.742Z",
+    "updatedAt": "2024-11-25T19:00:15.668Z"
+  },
+  {
+    "id": "531bfa0f-9d53-40d2-9cd3-07daf8539afc",
+    "name": "Inventory Management System",
+    "description": "Develop integration with external services",
+    "dueDate": "2025-08-27T20:01:22.882Z",
+    "members": [
+      "b95d96c8-bf92-4fa4-b4d7-2d9fc99e518b",
+      "84023d08-b8cf-457d-9178-c00ff87fffb5",
+      "6b049b57-987f-4e09-8b1e-2115b87d5545",
+      "336a9d56-4e5a-4284-b42b-bb57ab5f0b59",
+      "57284fa0-8b55-4a52-b0ca-0b2b1028ca86"
+    ],
+    "tasks": [
+      "38616420-eb16-4d05-a7b1-17f3d2c54894",
+      "70d479a8-33b2-46ee-aeb7-082ed9f5c6c5",
+      "6a936652-e41a-4c54-8bd1-bec3eec58765",
+      "a8c518a7-089c-48ea-aaa8-7e3e4b5ea9b5",
+      "bce63391-48a6-4c25-a94a-668d6baf4762",
+      "75f9a7f7-e80c-4288-8ae7-4afa8859bda3"
+    ],
+    "createdAt": "2024-01-03T12:13:05.272Z",
+    "updatedAt": "2025-03-21T09:01:56.417Z"
+  },
+  {
+    "id": "645ba426-6fcd-4589-be23-b7dba825d3bd",
+    "name": "Payment Processing Integration",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-04-08T17:54:41.762Z",
+    "members": [
+      "a810d4c6-3eee-4e3b-a621-03ff76b7e33e",
+      "42cfbf3b-db0c-487a-9efb-aeeb81049365",
+      "90c0702a-f4ec-465e-8ac2-70f0b168c264",
+      "1662a21e-7f24-4e04-9ac3-55c5718220be",
+      "b0a5533e-0701-4917-8b41-a463b83e35cb"
+    ],
+    "tasks": [
+      "a84ee03e-be7a-412e-a20f-a6a4c3fdcb7b",
+      "46b8a11b-fedd-4457-b5fd-4f43ac7a6139",
+      "8c2542eb-574a-47c0-8c10-956d3d661c0e",
+      "9668b3cb-6395-456c-b6a9-891963dcb7a3",
+      "72da2c6f-7667-4239-b8a0-b006f6d919f8",
+      "a957fa96-3e21-43f3-8797-9a6441b70fba",
+      "03938310-2af3-4e89-94b3-4e9e30a7f26f"
+    ],
+    "createdAt": "2024-01-09T14:42:46.100Z",
+    "updatedAt": "2025-03-24T20:19:52.399Z"
+  },
+  {
+    "id": "0e7d8797-2fbf-48c9-b748-a34ffdc4cf5f",
+    "name": "Real-time Chat Application",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-08-12T10:36:13.606Z",
+    "members": [
+      "f02e5e08-83d2-4e68-923c-73ed9bbef0eb",
+      "baa15343-272e-4b32-8978-1daa4d043b3b",
+      "0da17a02-8286-4b0e-afb6-ed99818c939b"
+    ],
+    "tasks": [
+      "71e4efbf-016f-4ea7-9d47-2067a5285a8a",
+      "fc56e629-6a57-41cf-b1b6-cddf28cbe0aa"
+    ],
+    "createdAt": "2024-01-06T12:20:56.860Z",
+    "updatedAt": "2024-07-26T15:14:45.487Z"
+  },
+  {
+    "id": "082e9138-22c6-493a-96a1-2bc6e703dc17",
+    "name": "Content Management System",
+    "description": "Build secure communication channels between components",
+    "dueDate": "2025-09-14T13:06:59.425Z",
+    "members": [
+      "0e002b02-9fe0-4d9c-b98d-d93884a5b207",
+      "e97fe476-2aab-4bc4-a3f1-6ed5ba0e1213",
+      "8aadde68-8191-45d0-b32a-20e868a00b60",
+      "796202cc-c482-4176-89ba-76e899a9cf39",
+      "357c8c5f-492f-4fad-b413-7420b4ebafba"
+    ],
+    "tasks": [
+      "7b755a64-0f07-4823-b999-3f6cf555b1f6",
+      "258c9943-15f7-4285-a867-ce3f09f7f9af"
+    ],
+    "createdAt": "2024-01-06T05:34:34.672Z",
+    "updatedAt": "2024-10-27T16:53:57.712Z"
+  },
+  {
+    "id": "54106b66-046f-4d1d-88f4-7cc49215a6aa",
+    "name": "User Authentication Service",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-10-07T17:37:48.502Z",
+    "members": [
+      "030f83ef-e17d-4ffc-bfd6-6cffa58446e8",
+      "bc5053b5-c3aa-4a04-9f6f-acaca7254480",
+      "005797d1-4419-4e27-857e-c6ba516807ea"
+    ],
+    "tasks": [
+      "34b98193-c668-4c6c-811d-43ea3ee2f593",
+      "882653b8-4464-45b8-8af2-d50883fd235b",
+      "c4b0ad98-2c13-41b6-84fc-6ba8da3fee9a"
+    ],
+    "createdAt": "2024-01-06T12:45:17.011Z",
+    "updatedAt": "2025-03-07T10:04:47.536Z"
+  },
+  {
+    "id": "a6f19fea-36f3-4e58-9ba3-d9230fcd0b99",
+    "name": "Reporting and Analytics Platform",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-11-16T07:23:45.192Z",
+    "members": [
+      "a8609835-80df-4162-9850-4aefdacdb2d0",
+      "23e7c782-97ad-492a-99b7-460dfa47d507"
+    ],
+    "tasks": [
+      "b64dd858-7260-4420-bf02-accb12643301",
+      "481f8e63-ab09-46d8-9afc-07e4f52e5850",
+      "1ab9a4d8-2321-4c04-ae6a-a7ff0b4a09a4",
+      "c8f68666-536b-4fa4-9475-ba40f239e302",
+      "85b587bb-65e8-4393-a23f-a7770373194e"
+    ],
+    "createdAt": "2024-01-13T17:06:30.953Z",
+    "updatedAt": "2025-01-30T01:45:59.784Z"
+  },
+  {
+    "id": "608c3252-a35a-443f-920f-e6614d050123",
+    "name": "Email Marketing Automation",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-10-03T15:01:22.212Z",
+    "members": [
+      "8ef62414-f1c5-4299-9e46-8c18a620b463",
+      "59437711-187c-4b14-aefc-97ea488b683e"
+    ],
+    "tasks": [
+      "77d16887-9869-46f0-a563-681755f3ec31",
+      "53783a3c-f97b-4f99-8bb6-1700ebb8e6cc",
+      "c835ac49-a072-4d86-8ef9-2d879b404b3f",
+      "45692c64-c749-452b-a3b2-d494d540fdb5",
+      "c660ce4e-ff0b-4c48-98f8-635a558ffcb7",
+      "94c91326-ec6f-47a1-b6d5-462a530ab054",
+      "9e51bd25-e627-47c3-bfc6-43158eedab89"
+    ],
+    "createdAt": "2024-01-15T21:25:31.218Z",
+    "updatedAt": "2024-03-09T07:23:38.633Z"
+  },
+  {
+    "id": "5cc22ce2-9c07-40ad-9be8-d0010e6d1110",
+    "name": "Social Media Integration",
+    "description": "Create efficient data processing algorithms",
+    "dueDate": "2025-04-14T00:07:30.852Z",
+    "members": [
+      "5486daa7-84f2-4d2c-b4ad-0b2809010ec5"
+    ],
+    "tasks": [
+      "c3fe7c1d-5597-45a8-88f7-79ad3499bdff"
+    ],
+    "createdAt": "2024-01-02T05:43:38.639Z",
+    "updatedAt": "2025-02-10T22:06:55.239Z"
+  },
+  {
+    "id": "a92ce0ce-7676-4b4d-bc0e-3e5ea65348de",
+    "name": "E-learning Platform Development",
+    "description": "Create customizable user interfaces",
+    "dueDate": "2025-05-10T17:47:10.702Z",
+    "members": [
+      "b72a4313-03c9-4371-a589-6f5681c2c6c0",
+      "2875b409-9e7c-4779-b02d-d09c46c2a5cf",
+      "46850971-2817-4f61-9bbe-f40adcd5bcac"
+    ],
+    "tasks": [
+      "f9ed0810-24ec-40f1-87c8-710c19e00dc4"
+    ],
+    "createdAt": "2024-01-11T09:34:22.713Z",
+    "updatedAt": "2024-10-21T17:16:20.568Z"
+  },
+  {
+    "id": "409ca04b-7aed-49b1-86f9-8740d4da94b6",
+    "name": "Healthcare Management System",
+    "description": "Develop user-friendly documentation and guides",
+    "dueDate": "2025-11-13T06:36:28.352Z",
+    "members": [
+      "add0870e-5efa-42a1-a57b-155f0fc69f2c",
+      "2ec80afc-8965-4c70-af36-a91d906832e6",
+      "38af7b26-94eb-4146-a481-f89cee30218a"
+    ],
+    "tasks": [
+      "d53d5c1b-1373-4f69-bec2-b448a1149d13",
+      "c8e84a41-e0ef-4793-840a-741b40a0c0ae",
+      "4d95592f-0c32-48a0-884a-8bd695f1d719"
+    ],
+    "createdAt": "2024-01-03T02:07:14.966Z",
+    "updatedAt": "2024-05-19T11:32:38.096Z"
+  },
+  {
+    "id": "cbdb6d3d-10ea-42c0-b950-857ca266eb07",
+    "name": "Financial Reporting Dashboard",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-05-13T20:21:04.285Z",
+    "members": [
+      "f92c9f7e-30f4-4e40-9fd8-d45271683296",
+      "7f264b7b-de2a-44e4-80bc-709b709cca82"
+    ],
+    "tasks": [
+      "4957f9f1-c233-40fa-a210-c2c4bd288b06",
+      "f5a8b9b3-6279-476b-a903-d9350588145e",
+      "fc0704ba-99bf-4e03-a6d6-e1cb3a9d32c0",
+      "9d0e820c-90be-4beb-8956-b4c1ba19ec64"
+    ],
+    "createdAt": "2024-01-05T15:24:20.481Z",
+    "updatedAt": "2025-02-24T04:05:10.939Z"
+  },
+  {
+    "id": "de48f2ec-cfa1-4b17-a790-c04e4a713a18",
+    "name": "Supply Chain Optimization",
+    "description": "Build an intuitive interface that provides excellent user experience",
+    "dueDate": "2025-08-15T06:56:32.939Z",
+    "members": [
+      "55c95b0c-cdde-47e1-8cac-1a3d3231846d",
+      "d80be29e-5b30-4751-8532-f04a7ff9d966",
+      "cf747e2e-3862-41ef-b3fa-53aa79653854",
+      "11a8b351-ccff-4072-a863-111dde385b6d"
+    ],
+    "tasks": [
+      "9458ed71-4ef4-4b15-b311-a2f9ae16d665",
+      "ab6811b8-d277-417c-ac8b-fc478ced57f2",
+      "2d112bac-9a06-4def-a68a-2e92994d5e9f",
+      "16a153b0-ce01-414f-a759-d58a53c466fb",
+      "6a936652-e41a-4c54-8bd1-bec3eec58765"
+    ],
+    "createdAt": "2024-01-12T08:21:45.345Z",
+    "updatedAt": "2024-01-29T21:26:39.485Z"
+  },
+  {
+    "id": "9de0ea18-4fc4-4da2-8999-43b7730ed791",
+    "name": "Customer Relationship Management",
+    "description": "Implement security best practices",
+    "dueDate": "2025-09-04T11:06:01.509Z",
+    "members": [
+      "c64c6883-4db5-41d8-9558-226d87544148",
+      "4566951f-c156-4eb9-932c-d78b9482c771",
+      "34f4592c-3d56-49a6-b596-95487a3124e9",
+      "2cb665d9-6333-49ec-99ca-c044f2fc2d73"
+    ],
+    "tasks": [
+      "01e2c4e1-43a0-4658-8fa2-817ef724aa10",
+      "7d313ca7-936c-4a92-bfd3-c1afbb75f9ba"
+    ],
+    "createdAt": "2024-01-10T12:24:53.320Z",
+    "updatedAt": "2025-04-11T18:22:42.016Z"
+  },
+  {
+    "id": "227e910a-c880-4c2c-b845-f5e086442b16",
+    "name": "Human Resources Portal",
+    "description": "Build real-time data synchronization",
+    "dueDate": "2025-06-15T07:04:58.803Z",
+    "members": [
+      "cd49882e-cf14-4375-910a-c70e5cad7500",
+      "9bbf6a4e-1fa1-49fc-8ae7-46eb7ea8241f"
+    ],
+    "tasks": [
+      "f7ab1b71-f46f-45bc-8299-3d7f36c6be89",
+      "10998afb-fa7b-435b-9d07-fb0fb6c2ccc8",
+      "22b9bda1-1f7a-44e1-a672-8ae684c0d542",
+      "05339e1f-f100-460d-baa8-359cd29f9914",
+      "17067b64-84b5-4885-b224-e2890081d296",
+      "a84ee03e-be7a-412e-a20f-a6a4c3fdcb7b",
+      "c2f9b9f3-e93c-4890-b332-1690e8b9b2da",
+      "30c5b695-1af9-42d9-b831-a4cf9957b5ac"
+    ],
+    "createdAt": "2024-01-08T00:58:43.416Z",
+    "updatedAt": "2024-05-26T02:28:25.966Z"
+  },
+  {
+    "id": "1ddb90a9-c97e-4025-ac88-9513db985f82",
+    "name": "Project Management Tool",
+    "description": "Create automated deployment pipelines",
+    "dueDate": "2025-04-11T07:34:05.874Z",
+    "members": [
+      "686adaab-45a0-4473-8f78-5ec69cb95053",
+      "eea40e67-da22-4625-b0ed-00d8d8aba9af",
+      "fa094ceb-864e-4058-9920-110475b221bd",
+      "098b2c5a-9b74-48da-ba93-67ee5b9cdf3b",
+      "cf14df55-9c56-44b5-91b1-8d2037df72cf"
+    ],
+    "tasks": [
+      "78de6ff1-baee-4028-961f-7919a8f61d5f",
+      "706b6a27-c9b0-43f1-a4ae-cb8b598f449c"
+    ],
+    "createdAt": "2024-01-06T18:33:36.089Z",
+    "updatedAt": "2024-01-22T12:20:42.312Z"
+  },
+  {
+    "id": "8591f16d-9090-4013-a9ab-bb4f05854105",
+    "name": "Time Tracking Application",
+    "description": "Implement scalable architecture for future growth",
+    "dueDate": "2025-08-29T14:27:22.225Z",
+    "members": [
+      "ebbee7f8-dad5-4899-ab97-c1a5c22d7bf5",
+      "975eb904-6bc3-45a7-b236-7d8233347874",
+      "4698f99c-bcd3-4633-bd26-82c073220741",
+      "0d48f851-5609-4be7-92ba-59d39940890f"
+    ],
+    "tasks": [
+      "7974fe09-6574-4ce2-a3f6-f53f3ebc05a3",
+      "7ab3737f-eead-4332-977c-2171729963b1",
+      "11cbf9f1-a084-47ce-a5c5-84b6bfbea7ae",
+      "0269bb8e-50e4-4eca-b84f-5f91ec12b23d",
+      "36ca046c-041b-4449-b21e-d17429fbe21f",
+      "04a915de-ffea-4831-ba03-fc38e18647ea"
+    ],
+    "createdAt": "2024-01-06T17:45:20.762Z",
+    "updatedAt": "2025-05-09T15:28:26.970Z"
+  },
+  {
+    "id": "c0be05d5-01c4-42e4-851a-7645a31b8afc",
+    "name": "Expense Management System",
+    "description": "Build secure communication channels between components",
+    "dueDate": "2025-02-09T22:58:58.826Z",
+    "members": [
+      "e31c4b44-3f73-41ce-b0c5-0100d9c091c2",
+      "1ff412db-c204-474f-a747-b9d9e23d147c",
+      "10b7bf36-7ae6-4b14-bdf9-66fc90525c44",
+      "e5923f26-3317-44e3-b1dc-9e5d2ab9a80d"
+    ],
+    "tasks": [
+      "8519c0e3-9657-40dd-8bbe-4372be23e5ef",
+      "fd63bd54-d323-4a65-b261-29722b0e96bf",
+      "aac6250b-1bfb-494a-b387-1668aec77c0f",
+      "178a588f-b404-40db-bf98-8e3e39c768cf",
+      "71cd234f-11bb-4ae1-b869-9e502f629685",
+      "5ba564bf-c3f3-4415-b117-61f97edaf9c9",
+      "c4236665-f3df-4467-b91b-ec464690cc38",
+      "32151f80-5555-4d00-a28c-86f2e14abbef"
+    ],
+    "createdAt": "2024-01-11T10:51:32.930Z",
+    "updatedAt": "2024-06-19T08:41:15.309Z"
+  },
+  {
+    "id": "e9ca5c53-b5ed-4511-ba4b-0c442162db0f",
+    "name": "Document Management Platform",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-12-30T21:21:32.684Z",
+    "members": [
+      "7a5b5f2e-c6ca-43ea-adc6-d1085202b87d"
+    ],
+    "tasks": [
+      "0e2a1f30-21fe-46ad-8a77-c03e61dd8747",
+      "34a67742-a7c3-4490-9449-699ac9d87ad8",
+      "38a77ec6-761b-4f49-a307-f73eee25582c",
+      "a35db859-0b12-4384-972b-90c805d5db31"
+    ],
+    "createdAt": "2024-01-11T04:59:26.353Z",
+    "updatedAt": "2024-08-19T04:52:26.002Z"
+  },
+  {
+    "id": "4e43e60a-1a3b-4750-8be3-8b8b0bf22ff3",
+    "name": "Workflow Automation Engine",
+    "description": "Design flexible configuration management system",
+    "dueDate": "2025-03-08T18:02:01.978Z",
+    "members": [
+      "115cedbb-6cd3-4f2e-8856-c322c8d3d3f6",
+      "a0f352ad-4adf-4ba5-9e00-e23b11579de1"
+    ],
+    "tasks": [
+      "52693f62-2e17-4a26-a369-cef41356ace1",
+      "c904caa9-d90b-4236-8c00-0103e8350c9e",
+      "84be250a-a230-4865-8235-105325db5287",
+      "738f98f0-ea58-4430-9a21-22ba96198a36",
+      "8bc78016-b37a-4e8d-8dba-23eafb314852"
+    ],
+    "createdAt": "2024-01-05T08:34:09.750Z",
+    "updatedAt": "2024-09-25T01:08:55.810Z"
+  },
+  {
+    "id": "6f04ab99-c03b-4a7e-bb34-09936bfe99d8",
+    "name": "Business Intelligence Platform",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-04-08T12:29:13.404Z",
+    "members": [
+      "eea40e67-da22-4625-b0ed-00d8d8aba9af"
+    ],
+    "tasks": [
+      "52693f62-2e17-4a26-a369-cef41356ace1",
+      "71cd234f-11bb-4ae1-b869-9e502f629685",
+      "f5bc9172-c3a2-45a2-935f-566b896663c4",
+      "16a2e6bd-d962-43c0-8f80-84b1a2b1ba99"
+    ],
+    "createdAt": "2024-01-06T01:41:18.248Z",
+    "updatedAt": "2024-02-16T17:27:16.662Z"
+  },
+  {
+    "id": "ac94c641-7616-417e-bf18-2591c5e29f3b",
+    "name": "Machine Learning Pipeline",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-05-02T13:53:10.804Z",
+    "members": [
+      "6a4b0699-2a05-45f2-af5f-d3f6c4c80894",
+      "924fed3a-a269-41a4-8439-d9dd2de951ed",
+      "7cde3f6f-1568-465c-b55e-dab82b2ac505",
+      "f28dca83-25b3-48a4-8c46-55f634a76d3e"
+    ],
+    "tasks": [
+      "0295ebc3-3b50-4c30-8a23-3a2b0742c394",
+      "68f27126-e81e-4013-829f-4fde0fd8f3a3",
+      "f7ab1b71-f46f-45bc-8299-3d7f36c6be89",
+      "8486ac06-a7e0-4131-babe-2e8fc45b3851",
+      "37db89a5-5065-4c42-b008-673702e826eb",
+      "0f5e1303-637a-44a5-a18f-076625e9c4a7",
+      "f0526684-3976-4e39-98df-f49dbcf021ce",
+      "0a829b6d-cd8d-47d2-9e27-e2597a3155cd"
+    ],
+    "createdAt": "2024-01-02T02:03:35.074Z",
+    "updatedAt": "2024-02-23T04:08:07.809Z"
+  },
+  {
+    "id": "5a752e45-fa0f-4d9c-b846-eae4e9f45523",
+    "name": "IoT Device Management",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-08-15T18:00:36.018Z",
+    "members": [
+      "e2db1b10-de5e-4750-8214-f2b3199b2830",
+      "1c710cd5-92bd-4dcc-9548-b7c2374e454a",
+      "8caddba3-5d5b-4352-aa56-1119b2085422",
+      "9fdc5a29-2399-4aa6-beb4-51132e584318",
+      "ead37552-a567-405f-80b8-065088783311"
+    ],
+    "tasks": [
+      "c0983711-1938-43df-a726-e8b618a7c5cc",
+      "6bb9b042-e48f-4778-9a83-946d6090967b",
+      "9180fbbf-baab-40cd-ba3d-b93c2c76d9a9",
+      "3fb6d756-16af-44ae-b942-e9584b7f07f3",
+      "c4a78859-9636-48f5-9e82-f6534cdc00b9"
+    ],
+    "createdAt": "2024-01-05T20:35:24.167Z",
+    "updatedAt": "2025-05-09T14:21:21.954Z"
+  },
+  {
+    "id": "51a14d5a-856b-4584-813b-4dca2c3a6f21",
+    "name": "Blockchain Integration",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-07-29T04:36:34.171Z",
+    "members": [
+      "2cb665d9-6333-49ec-99ca-c044f2fc2d73",
+      "ce57bf7f-a1e9-43de-9181-ac5a0e24135e",
+      "94e212c3-74f5-4be6-83e7-e47928163f7b"
+    ],
+    "tasks": [
+      "35165e2d-293e-4868-a0e5-8051a0153786",
+      "e3abf783-b86c-450a-b8fa-7b7bd2d388b0",
+      "793a8498-37f3-41fd-8af6-2941d5f7c7a6",
+      "aaf4960d-ba16-4b8d-8588-55021e54a1e6",
+      "5909a2e0-ac47-4c2a-baa8-9cbd78a72068",
+      "bf0ad649-c4d0-4ebd-9616-13e99a633a97",
+      "16b76614-cbd6-4d99-a879-1de49d646b61"
+    ],
+    "createdAt": "2024-01-14T20:58:46.821Z",
+    "updatedAt": "2024-10-17T09:04:06.444Z"
+  },
+  {
+    "id": "51aa7fc0-bd7e-46df-8e6b-922c067ffbe9",
+    "name": "Cybersecurity Enhancement",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-08-26T08:28:23.368Z",
+    "members": [
+      "f62d0851-5204-45cb-9308-d79400ea7c86",
+      "3210472c-184e-4ce1-8397-94b758fcd347",
+      "0c9bb41f-ecb5-4d0a-9a82-da04819b5e73"
+    ],
+    "tasks": [
+      "2b911141-ad40-42da-8d91-14720cb2dc8e",
+      "4406529a-7782-4f72-839d-a0f081d6c071",
+      "8ee0c3df-cff6-4551-877c-ca1a28ae1260",
+      "a10b6932-54bf-4b3d-8c5d-3b43f97fbe98",
+      "d024fb40-bc47-4b92-886f-7efff19f7bc0",
+      "cc0cf85b-1fb2-43aa-b43a-d4b3c6977700",
+      "b58606f9-d5a1-482f-aa9e-1e6c73a0b985"
+    ],
+    "createdAt": "2024-01-10T20:21:42.686Z",
+    "updatedAt": "2024-11-05T21:59:33.720Z"
+  },
+  {
+    "id": "6e65055d-df30-4e04-8100-2793869d807b",
+    "name": "Performance Monitoring System",
+    "description": "Build real-time data synchronization",
+    "dueDate": "2025-10-04T09:25:42.645Z",
+    "members": [
+      "f761b965-f5db-4117-b804-0042db9682eb"
+    ],
+    "tasks": [
+      "12e6a944-48a2-4f2a-aa78-94d0ce0305f9",
+      "6504fbd0-1e42-48d2-8767-69bdb5093278",
+      "7a69b648-36c4-4bb3-be60-5bf4c20222ba",
+      "89028c74-c79b-4d67-a70f-da3d9783ba30",
+      "0d30ff31-2fae-4a36-b26c-3e899750a48e",
+      "fc693dda-d5af-4914-9268-65bd271f5633"
+    ],
+    "createdAt": "2024-01-12T02:22:17.969Z",
+    "updatedAt": "2025-04-13T17:20:14.580Z"
+  },
+  {
+    "id": "535e9dff-89fe-49b4-b9b7-5592b560f0f5",
+    "name": "Load Balancing Implementation",
+    "description": "Implement security best practices",
+    "dueDate": "2025-08-21T23:17:25.534Z",
+    "members": [
+      "31969c3e-c609-4596-81a9-a8f38852f22f"
+    ],
+    "tasks": [
+      "f8463238-3aac-4f65-a2ff-4271f25d20e1"
+    ],
+    "createdAt": "2024-01-13T11:15:43.670Z",
+    "updatedAt": "2024-08-11T19:00:31.575Z"
+  },
+  {
+    "id": "3894f38e-6919-43ef-8a06-b669f750e7fe",
+    "name": "Database Optimization",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-10-04T16:19:00.430Z",
+    "members": [
+      "b0a5533e-0701-4917-8b41-a463b83e35cb",
+      "c35ed05f-50fc-4366-86eb-d3314a33f234",
+      "b7fda789-fcb8-4e24-a0eb-bf510894b1aa",
+      "defe9a92-3b6a-456a-90d9-ed42dfced377"
+    ],
+    "tasks": [
+      "0856f0a0-79d3-4bfa-8215-8e0bba7bd4d2",
+      "ee511499-8ccc-4ca9-b4fd-42fd0e0d8112",
+      "481f8e63-ab09-46d8-9afc-07e4f52e5850",
+      "d4e2cd5a-e51c-4786-b8ab-5fa1f4bd733c"
+    ],
+    "createdAt": "2024-01-11T06:04:28.180Z",
+    "updatedAt": "2025-01-13T20:12:33.986Z"
+  },
+  {
+    "id": "21bbbf6a-ce43-4e9b-a127-0ea9735c9660",
+    "name": "Microservices Architecture",
+    "description": "Implement advanced search capabilities",
+    "dueDate": "2025-07-29T10:17:06.415Z",
+    "members": [
+      "aab36b68-a379-457b-bfb1-0284f556360c",
+      "defe9a92-3b6a-456a-90d9-ed42dfced377",
+      "cdce7e51-9087-4e12-bffe-d648aab4a886"
+    ],
+    "tasks": [
+      "0f42a71c-29b2-42ce-9e04-d142af898258",
+      "e5d63dbd-3f9d-4a06-b08f-17bdcd8a5c79",
+      "a939e3fe-00fa-431e-826e-66d28af1229a",
+      "dd51c0fd-3f20-45b6-bbd2-ac49ae0491d2",
+      "aa5e5b19-e06a-4b22-8d16-1b491c4e6ab6",
+      "f96b474d-42ba-47a9-91e3-d18626e8c280",
+      "fc359dfa-c354-4443-a7b3-9122c15ddbe6"
+    ],
+    "createdAt": "2024-01-01T13:41:04.453Z",
+    "updatedAt": "2024-09-23T01:01:08.199Z"
+  },
+  {
+    "id": "f6a1dbcd-b83b-423c-8d7e-50f32b018f69",
+    "name": "Container Orchestration",
+    "description": "Develop robust backend services with proper error handling",
+    "dueDate": "2025-03-14T13:54:46.322Z",
+    "members": [
+      "ce3613b9-589c-4b69-bdd4-84cb4f32f815",
+      "c2e08da3-5103-4e3b-8f78-92e7acacc3d0",
+      "b72a4313-03c9-4371-a589-6f5681c2c6c0",
+      "073f4afb-deab-45b5-9bb9-5e9a1f090672"
+    ],
+    "tasks": [
+      "4c1c7cc3-f297-4d08-b44b-5bb700c2c15d",
+      "97cdf164-74f3-4721-b49d-86c359cdb800",
+      "01fd2e6e-4af1-40b9-809d-e27c21df5c3c",
+      "28181a93-2063-440b-9e8d-9c761222c8ba",
+      "d5cddf79-27ef-417b-82d1-71fc8177f911",
+      "66efe35d-6941-49d6-8514-6a900b3f5ebe",
+      "a75a8c8c-db55-4dc6-850c-8d76e08dd0ef",
+      "9a3b609a-fff4-4992-80d7-ade155324261"
+    ],
+    "createdAt": "2024-01-08T00:24:00.983Z",
+    "updatedAt": "2024-02-08T22:11:11.094Z"
+  },
+  {
+    "id": "fd7d432f-e0e6-4f15-91e6-4df8838fd701",
+    "name": "Serverless Application",
+    "description": "Create efficient data processing algorithms",
+    "dueDate": "2025-11-06T09:12:18.598Z",
+    "members": [
+      "229a0d17-1458-4183-b4d0-08674f68719c",
+      "e7003d3a-f578-4ecc-b1a4-a5cc0a29a889"
+    ],
+    "tasks": [
+      "9f9d8b43-eb11-41c9-8282-da29a97bf7d5",
+      "fee7a7a0-a05d-42aa-941e-e1746243a065",
+      "321b8e54-b086-490b-935c-91eb9f2118eb",
+      "d4b0c8b7-68de-4676-b549-213a3fb11648",
+      "cfb15d63-00b7-4a02-80fc-ac4cf2c92362",
+      "fdb37fda-391a-4467-a5ef-eaefdada3752",
+      "19ced564-e757-41e7-a9d3-13b57e6bec5f"
+    ],
+    "createdAt": "2024-01-05T19:35:40.835Z",
+    "updatedAt": "2025-05-23T10:00:05.714Z"
+  },
+  {
+    "id": "c300f28e-9166-4046-b066-318d244e649e",
+    "name": "Progressive Web App",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-07-15T20:42:57.799Z",
+    "members": [
+      "45469179-78c0-44d2-a28c-f2d0503a10e1",
+      "578ebd5b-1efe-4b82-b2d4-2d7838866858",
+      "72b7c682-2e91-4ee1-a591-62748db6c737",
+      "87f36349-3657-467d-9ed7-ed62102d953b"
+    ],
+    "tasks": [
+      "66e8c085-3117-4ff1-bbbc-acfbff45f7e7",
+      "dd59c5f5-1aa4-4925-b67d-b5d220f893de",
+      "7456e012-cf33-4bfa-bfaf-6138664e6331"
+    ],
+    "createdAt": "2024-01-14T01:23:45.667Z",
+    "updatedAt": "2025-05-09T23:04:35.781Z"
+  },
+  {
+    "id": "2a9c0d2f-5c64-4b23-b5c1-7fb6fb51ae67",
+    "name": "Voice Assistant Integration",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-09-06T05:08:51.766Z",
+    "members": [
+      "6a6076e9-f58c-492f-9025-a1ed853727fd"
+    ],
+    "tasks": [
+      "94089c30-041a-465d-a489-402d6047d144",
+      "79120313-6658-48e7-b368-32e0fdc0718b",
+      "888421d2-8801-4266-b88d-c64edf761f45",
+      "3ce80041-8a0f-46ef-9b0e-4c1147dc2825",
+      "512aac35-d16a-483a-b654-bad158324e48",
+      "180ac458-bb4a-4c59-bb05-8fd69571b8bb",
+      "a7eb34d2-3c2c-43ba-809b-d038174b3c64",
+      "8707d962-9d39-4b09-b230-bee22ee2dcbd"
+    ],
+    "createdAt": "2024-01-15T23:48:31.055Z",
+    "updatedAt": "2025-03-17T02:33:28.262Z"
+  },
+  {
+    "id": "53ca755c-453d-4af2-8a28-67921b12bdd8",
+    "name": "Augmented Reality Features",
+    "description": "Develop robust backend services with proper error handling",
+    "dueDate": "2025-02-25T09:09:21.394Z",
+    "members": [
+      "79bba26e-5ab9-4d2e-a3ed-ad7c279157a4",
+      "61e92b49-4f72-4e71-9f6f-4ead8b2d2642",
+      "eb22ed91-d6f4-4a73-9e17-7bfd69e94987"
+    ],
+    "tasks": [
+      "25e017a7-3909-4bbb-ba05-0166ebe3cd41",
+      "63412499-a0be-4937-9a01-bec77a8cc032",
+      "edbab5ce-52c6-41f8-8014-04f6325e24db",
+      "3880c2b2-8874-4906-86ca-42d9848428ff",
+      "4311d560-ec42-4528-b2c7-fc309ae828d2",
+      "dd1c4051-4945-4861-889d-e2068a46b3e8",
+      "fa00d192-1d33-4039-a428-8c3c5a49a03c"
+    ],
+    "createdAt": "2024-01-07T08:16:18.062Z",
+    "updatedAt": "2024-05-29T12:21:25.702Z"
+  },
+  {
+    "id": "6f26f99a-aff8-4e7a-a170-4af13edbe5ee",
+    "name": "Virtual Reality Platform",
+    "description": "Create automated deployment pipelines",
+    "dueDate": "2025-04-14T04:53:00.938Z",
+    "members": [
+      "92f3488c-4181-4564-9b5b-5f844a999a51",
+      "40abb0d2-1886-4e61-962d-8b6dbd98aecd",
+      "0da17a02-8286-4b0e-afb6-ed99818c939b"
+    ],
+    "tasks": [
+      "2d263352-71e1-4c07-ab44-baabda8fb9e6",
+      "0090fddc-785d-4c47-ba80-f6f947da47ac",
+      "72b29d79-9e2e-4020-88a5-5a5e44efe394",
+      "60c34de6-0189-4bde-a34f-468cb43a4afa",
+      "f973990b-11c2-4f08-9efe-5201d7f468e0",
+      "be24f124-b7ee-4f6e-aff7-de202cbd271c",
+      "1d43192f-1226-444a-b714-904ac81d1d28",
+      "cdd2f640-2296-4ad9-832a-f707604a98e4"
+    ],
+    "createdAt": "2024-01-04T21:40:21.985Z",
+    "updatedAt": "2024-07-14T18:49:15.896Z"
+  },
+  {
+    "id": "57c11ec4-b8ca-439b-b4ae-5c4bad3e5011",
+    "name": "Gamification System",
+    "description": "Develop integration with external services",
+    "dueDate": "2025-09-02T11:47:54.163Z",
+    "members": [
+      "ef0bfd41-f2aa-4ade-9866-c3c53454c59d",
+      "18d32fa5-4cda-46f1-9470-f0379aa38f89",
+      "6d6e6e72-3d04-40f0-8dfc-338eb7d05ba3",
+      "aa6764e4-91e3-4811-9d44-f7fa5f3961db",
+      "b5905d60-fa5a-4ab1-ac65-bbf67d15dfd9"
+    ],
+    "tasks": [
+      "d71579a3-2834-4359-93d8-e7c25597ff82",
+      "e974e63a-24d0-493a-916e-035337585d48",
+      "4a12264c-1fc4-4280-8be1-269a735c8b9b",
+      "1e6d96dd-a740-4e15-a802-4de98b0190b9",
+      "1eb875e9-2ffe-46d8-ae2f-396dea03a902",
+      "73fc2db8-ef96-48d8-a4fa-60c8f3051225"
+    ],
+    "createdAt": "2024-01-13T05:02:17.922Z",
+    "updatedAt": "2024-10-14T23:02:18.226Z"
+  },
+  {
+    "id": "e219c4c2-22cb-43d1-9ce2-64cabd4864bf",
+    "name": "Recommendation Engine",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-04-23T04:52:27.503Z",
+    "members": [
+      "e1bfe5a5-b9a0-4bca-bcb2-acf919355f52",
+      "ce25c2c2-a4a9-470d-82cf-bb5b461330ca",
+      "11ef37da-ccec-47f7-ab26-183cf2e9f0e0",
+      "ec38946b-b6ef-4e70-9d13-c00b00c49435",
+      "94aa4c7f-9150-40a3-9640-74d5338f773e"
+    ],
+    "tasks": [
+      "ffca9791-2c60-4752-a690-7a4d632dac2f",
+      "108cab76-0829-435c-b59c-a9e95fb4bc4a",
+      "41ebb32a-ee47-44e3-90e8-305aa2cd65fb"
+    ],
+    "createdAt": "2024-01-04T12:42:44.172Z",
+    "updatedAt": "2025-02-08T18:43:21.001Z"
+  },
+  {
+    "id": "49a513ab-1257-4f15-8eaf-3787ec8b3abf",
+    "name": "Search Optimization",
+    "description": "Develop integration with external services",
+    "dueDate": "2025-11-09T17:13:09.685Z",
+    "members": [
+      "527cfdb6-8b38-4e73-9f2e-fe0e87d67b18",
+      "79bba26e-5ab9-4d2e-a3ed-ad7c279157a4",
+      "e1bfe5a5-b9a0-4bca-bcb2-acf919355f52",
+      "83395214-51ae-4052-a158-9d6cc9786156",
+      "7af9e0c2-362f-428a-bde8-3222e02249b5"
+    ],
+    "tasks": [
+      "0afe844d-f559-461d-a1a1-ddaf9a31d006",
+      "3089c0bb-2cd5-47a3-9141-5ed79597336f"
+    ],
+    "createdAt": "2024-01-10T12:06:01.654Z",
+    "updatedAt": "2024-09-01T15:53:26.706Z"
+  },
+  {
+    "id": "728e663a-7db7-42a8-8db9-93e04adc9997",
+    "name": "Multi-language Support",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-12-04T10:56:13.125Z",
+    "members": [
+      "d5e01a82-2b8a-4d74-a8d4-42b3c36b2e55",
+      "169572a9-51fb-444b-9d15-41625e1efb57",
+      "83395214-51ae-4052-a158-9d6cc9786156",
+      "1cd45f93-6ea4-4e7c-95e8-4b7ccd477b93"
+    ],
+    "tasks": [
+      "ab0a0bc5-280c-4d9a-bc6e-6367470d299c",
+      "d0146477-fa6e-484e-b836-830d62e125d6",
+      "25e017a7-3909-4bbb-ba05-0166ebe3cd41",
+      "0f5f872f-8ccd-470e-97ae-9fafd380d559",
+      "3a682f37-303d-4272-877a-21d983c03553"
+    ],
+    "createdAt": "2024-01-02T20:00:15.527Z",
+    "updatedAt": "2025-05-31T06:08:07.065Z"
+  },
+  {
+    "id": "b7546412-55c8-4718-89ef-493ce0e8df8b",
+    "name": "Accessibility Compliance",
+    "description": "Implement scalable architecture for future growth",
+    "dueDate": "2025-12-15T19:47:37.692Z",
+    "members": [
+      "188de71e-8de0-4a14-96cd-9f38a58c4908"
+    ],
+    "tasks": [
+      "d994991a-78ce-46de-a2aa-b8014ae8f795",
+      "160b4b56-7bba-4c99-a606-ecd8bd46f846",
+      "42769567-dbb8-4d39-a20c-fc73cbc382ee",
+      "ccad83b9-52e5-4640-aada-a0688e5f992f",
+      "1a64befa-40c0-41cd-a089-5e99c57a67fa",
+      "53f38d0b-634a-4699-abc8-098dbb78455d",
+      "1def0873-6d13-46ea-9c73-435cee1147df",
+      "3b110763-98e5-4cf9-acfe-3153720d3901"
+    ],
+    "createdAt": "2024-01-01T04:51:20.435Z",
+    "updatedAt": "2024-07-22T04:40:19.073Z"
+  },
+  {
+    "id": "4ce6146c-53ba-49a7-b8e1-a3ddcd0b7d1e",
+    "name": "GDPR Compliance Implementation",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-03-04T03:13:40.681Z",
+    "members": [
+      "f62647e3-534a-4544-8a65-d4e41691860d",
+      "257e4e3c-864e-45ca-95f3-156fb1a8388b"
+    ],
+    "tasks": [
+      "27ac761d-8d23-44d9-997a-86e36e895da1",
+      "07a6ef94-2000-4bb7-8b81-a048426f120a",
+      "333df745-5b1e-44f0-b211-82751f944300",
+      "3e32e7e6-357a-4b88-988f-4b23be1e08eb"
+    ],
+    "createdAt": "2024-01-07T07:44:08.531Z",
+    "updatedAt": "2025-06-19T12:05:41.607Z"
+  },
+  {
+    "id": "756b96bb-0d95-4990-a563-a53a7b90e2d9",
+    "name": "PCI DSS Compliance",
+    "description": "Create customizable user interfaces",
+    "dueDate": "2025-11-29T00:44:15.311Z",
+    "members": [
+      "c489ef42-af05-4141-bfc8-e29b724ac0fe",
+      "821a81de-cdf3-4afa-8ab6-f509459b755c",
+      "8aadde68-8191-45d0-b32a-20e868a00b60",
+      "25d5fba1-e108-431a-832c-c7b1e2e4a875",
+      "c64c6883-4db5-41d8-9558-226d87544148"
+    ],
+    "tasks": [
+      "4be74ea5-c9f5-413c-9678-f57583b1be17",
+      "062e4fb2-0a60-4bde-b6e1-6dd88452d3b4",
+      "88cd8ee9-a7d8-43d3-baa9-f6a59fd066c8",
+      "94a3a7be-2971-4cb7-9b74-979ab4ae8e2d",
+      "5026dcbf-f61d-4fef-bed3-ab0e64fa4e04"
+    ],
+    "createdAt": "2024-01-12T00:10:51.368Z",
+    "updatedAt": "2024-01-17T04:13:48.718Z"
+  },
+  {
+    "id": "b5d0e417-dc32-435e-8d8d-23ea1bb52886",
+    "name": "ISO 27001 Certification",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-03-06T15:50:07.160Z",
+    "members": [
+      "527cfdb6-8b38-4e73-9f2e-fe0e87d67b18",
+      "fb948a25-6ab6-4dc3-9a0f-61675ab6ba71",
+      "715b2c12-1ade-4885-84f5-b644c84a881c"
+    ],
+    "tasks": [
+      "af9d9866-b2ea-45f8-84c7-6e5d7d306922"
+    ],
+    "createdAt": "2024-01-06T20:49:59.554Z",
+    "updatedAt": "2025-06-19T12:01:15.680Z"
+  },
+  {
+    "id": "f357cd48-00a8-4994-8196-069ff89a928a",
+    "name": "Disaster Recovery Plan",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-05-20T01:59:30.688Z",
+    "members": [
+      "387e2cd8-5fe3-4951-9214-daf44e7e32b8"
+    ],
+    "tasks": [
+      "44db799c-d7b1-4780-b813-00f831fc1ff4",
+      "541957d2-1e05-459d-a15b-2a745cbba2e0",
+      "09837ce9-0b2f-4b0d-af2e-93b73be03dc5"
+    ],
+    "createdAt": "2024-01-09T06:57:15.757Z",
+    "updatedAt": "2024-07-24T11:50:14.705Z"
+  },
+  {
+    "id": "d2249bb0-0727-4716-9134-45ba889c010e",
+    "name": "Backup and Restore System",
+    "description": "Create accessibility features for all users",
+    "dueDate": "2025-07-26T20:05:37.285Z",
+    "members": [
+      "737a5f16-195a-440d-a433-55a0e8e7ee94",
+      "0d064390-5572-4f36-88e2-fc710124dc19"
+    ],
+    "tasks": [
+      "6f8ec936-111b-4c79-8ab2-b2bc7d3ec6ec",
+      "75509b60-8595-4eda-a307-ee20b6ab4577",
+      "6da0fb69-05d9-4714-9bb3-8bdf62ffa206",
+      "dd93e6d9-ae63-4a52-bd1c-3009bfc887ba",
+      "ec52fd33-465a-4e98-af1b-8e9b612844b1",
+      "5bd38432-0feb-4082-ae56-7863bc65bdb7",
+      "fd31c820-426b-4fbf-b8ad-8fac7f3725d2",
+      "3f4d8b0e-eaf0-4100-8525-e04ebf7f8d50"
+    ],
+    "createdAt": "2024-01-05T06:28:22.198Z",
+    "updatedAt": "2024-03-23T00:08:19.190Z"
+  },
+  {
+    "id": "764d104c-99a8-471f-a435-72be8209eb9a",
+    "name": "Monitoring and Alerting",
+    "description": "Implement scalable architecture for future growth",
+    "dueDate": "2025-11-24T08:58:16.515Z",
+    "members": [
+      "c2e08da3-5103-4e3b-8f78-92e7acacc3d0",
+      "c7807333-e077-4858-98a0-c325caad283a",
+      "73e45b46-306c-4692-8b91-97dc753e576e"
+    ],
+    "tasks": [
+      "8cfc278a-8bd6-4031-ad00-33e828f37ecf",
+      "b51ae1f1-f4a1-4a4c-bf95-56498c9438c2",
+      "e2cd3032-6cf0-401f-804a-c1563c191361",
+      "6eaa46d0-9311-4a69-ae42-9800517ffc3e",
+      "a6dd50cc-015e-427d-8017-066a49553eb6",
+      "8245fdae-9c59-4635-9e4e-1ef2ccf2ee84",
+      "38454e10-dfda-4cee-b731-13f222bbd999"
+    ],
+    "createdAt": "2024-01-07T20:31:56.358Z",
+    "updatedAt": "2025-01-13T17:43:41.912Z"
+  },
+  {
+    "id": "c05e7334-3531-4945-bb56-04a60cfef85b",
+    "name": "Log Management System",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-08-24T20:27:27.552Z",
+    "members": [
+      "e7003d3a-f578-4ecc-b1a4-a5cc0a29a889"
+    ],
+    "tasks": [
+      "642fbf68-533b-49c2-8c68-ea9ab6529549",
+      "fd6a17e8-3157-41de-9e80-6640a1ffbd4f",
+      "24710095-e7ca-442c-a626-38aead7a7049",
+      "0114c237-213d-4ac2-b613-bb228ff51bf5",
+      "83be17df-2185-418f-a3a5-36ab0e99a295",
+      "99b30bb7-ed45-441a-9fb2-079925fc66f1",
+      "b210bbf5-7a73-42c4-a66b-eab6c60d7c3d"
+    ],
+    "createdAt": "2024-01-14T00:43:57.047Z",
+    "updatedAt": "2024-06-16T23:10:04.577Z"
+  },
+  {
+    "id": "093c41ca-ff78-4751-9c87-a774cec837e5",
+    "name": "Performance Testing Suite",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-11-07T22:34:01.963Z",
+    "members": [
+      "96ac99cf-545f-487f-9eab-290d3b393209",
+      "656d25e4-3c88-47d8-8fb9-041d8a997ee5",
+      "b6ac5a4e-8a89-44a7-aadc-9b06ad50fc9c",
+      "f2e8652f-5dea-4b0e-849b-0b81bde9c016",
+      "675663d7-e9c3-4aa0-9969-d57f99125407"
+    ],
+    "tasks": [
+      "fc0704ba-99bf-4e03-a6d6-e1cb3a9d32c0",
+      "20cb3ed7-52a6-466a-85f2-1e925d41328b",
+      "0267a08f-22b3-43e1-b588-6828b6bd9601",
+      "ef926f9d-4666-4fed-9f82-116c3e8f239d"
+    ],
+    "createdAt": "2024-01-06T09:54:32.740Z",
+    "updatedAt": "2024-10-22T05:46:43.923Z"
+  },
+  {
+    "id": "4cd42204-3ef2-47e7-a85a-64dcf724ad8b",
+    "name": "Security Testing Framework",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-04-11T18:58:18.328Z",
+    "members": [
+      "1ff412db-c204-474f-a747-b9d9e23d147c",
+      "0f84ceb6-24ef-4c17-a34f-bb2b2c51fac1",
+      "a2b7773a-6e73-47bd-b6a5-d21396fa4e21",
+      "2875b409-9e7c-4779-b02d-d09c46c2a5cf",
+      "b6ac5a4e-8a89-44a7-aadc-9b06ad50fc9c"
+    ],
+    "tasks": [
+      "ee223c0c-bae6-4300-acab-6f1a558edc85",
+      "44489852-aa46-4004-a53f-48514ce6ac24",
+      "e601c18d-2469-48dc-97db-1f4424c5f531",
+      "62945de4-4414-466a-abe1-366e73a8e17f",
+      "37a78a0b-5c65-4362-b84d-9e82d18e22c9",
+      "1df78426-dfef-4aa5-964a-63f337a10126"
+    ],
+    "createdAt": "2024-01-12T12:06:49.804Z",
+    "updatedAt": "2025-03-31T01:32:01.414Z"
+  },
+  {
+    "id": "97672431-db8a-4775-bb56-254858b4405e",
+    "name": "Automated Testing Pipeline",
+    "description": "Build an intuitive interface that provides excellent user experience",
+    "dueDate": "2025-01-01T21:55:48.209Z",
+    "members": [
+      "0f964af9-e44f-46c4-b0f2-cb5f6a1cbebb",
+      "fae3e2dd-2d38-4158-9d7b-cb109e63cf7e",
+      "c4973366-45f1-4249-a057-0e8fff2db2f2",
+      "6415f771-f6ff-479b-864d-ee75e68c119e"
+    ],
+    "tasks": [
+      "30c5b695-1af9-42d9-b831-a4cf9957b5ac",
+      "3287a8c7-1585-4ecb-b43b-e1b8e83aede5",
+      "21547213-72b1-40f2-9ada-64eb93256c6a",
+      "0e8241a6-ad9f-4606-9554-56a3bf4c847c",
+      "fd21da23-dec2-487d-bc62-f276090a6fa3",
+      "50c24018-678d-4a62-9b7f-d49cc1a10b1d"
+    ],
+    "createdAt": "2024-01-06T13:12:45.807Z",
+    "updatedAt": "2024-05-18T10:34:51.397Z"
+  },
+  {
+    "id": "610980b3-7c63-4a8a-98f1-b1cb4361a8d5",
+    "name": "Continuous Integration Setup",
+    "description": "Develop user-friendly documentation and guides",
+    "dueDate": "2025-12-26T17:18:54.358Z",
+    "members": [
+      "4536d125-0d91-4ae9-b289-a028c1d31f56",
+      "1ad7deb7-92e0-4d89-93c1-43c37b27bdd9",
+      "c146e167-2a71-4387-b34e-419a9cf3bb11",
+      "115cedbb-6cd3-4f2e-8856-c322c8d3d3f6"
+    ],
+    "tasks": [
+      "b470add0-c6d2-49e9-b8d8-ec00d2ecd38b",
+      "08154bc3-686c-4a1c-98be-2ae7f497283f",
+      "0f42a71c-29b2-42ce-9e04-d142af898258",
+      "3f17627f-a918-4c75-ab03-abd1443954f4",
+      "140b861b-3b36-4090-8be8-01f577684fd1"
+    ],
+    "createdAt": "2024-01-10T07:48:15.910Z",
+    "updatedAt": "2024-06-16T07:19:27.001Z"
+  },
+  {
+    "id": "73d5fe52-66e2-47b6-9def-03d30e239fa1",
+    "name": "Continuous Deployment Pipeline",
+    "description": "Build real-time data synchronization",
+    "dueDate": "2025-06-02T21:57:41.897Z",
+    "members": [
+      "72b7c682-2e91-4ee1-a591-62748db6c737",
+      "ec790cb3-924e-42b2-8d08-e8867d808025",
+      "3ffb1ee3-1708-42b1-8818-3e9a90c61361",
+      "18d32fa5-4cda-46f1-9470-f0379aa38f89",
+      "0a6a94f8-54b5-4ec6-8fb8-fa77a16ae6be"
+    ],
+    "tasks": [
+      "c3a1173d-9656-48c5-8432-d7ebf8c6c423",
+      "4a27b1ce-9508-4728-b26a-f43861cadecf",
+      "d6d1ee9c-f6ff-457d-92c0-89d8efd90329",
+      "f276263b-bf5f-47f6-84b1-b9791c9ce00e",
+      "b89cd207-3d9f-4a47-9ad0-d3c39b7d2592",
+      "a68cb939-a056-4a62-817d-64e93f1a15db",
+      "220c394c-5ed7-4b56-bc25-072fc353dd6e",
+      "9567be77-d734-4176-82cd-20de25ffea24"
+    ],
+    "createdAt": "2024-01-07T05:16:40.536Z",
+    "updatedAt": "2024-03-28T12:14:43.457Z"
+  },
+  {
+    "id": "7f890889-3f47-44d6-a848-1deef397cd4a",
+    "name": "Infrastructure as Code",
+    "description": "Develop integration with external services",
+    "dueDate": "2025-06-21T15:20:01.907Z",
+    "members": [
+      "574f3569-266a-4577-a647-80cf305382c6",
+      "e6b952e8-edbe-4e02-ae75-2c10af5c09db"
+    ],
+    "tasks": [
+      "d3835715-fc43-4004-bc6d-64989d9f0a63",
+      "dde99828-a35c-428b-852e-37952e8fddb1",
+      "52cc0531-abc3-4741-9da5-1c81da2fc99f",
+      "8d7851f2-2d15-49a9-91bb-ae4131fcf4cf",
+      "accd12af-0b75-4811-8242-6e274574c843",
+      "0b42570c-acdb-4130-a8c8-1404e2f63b7e",
+      "baa0b999-9029-424a-a76c-473f525b2539"
+    ],
+    "createdAt": "2024-01-09T16:59:47.812Z",
+    "updatedAt": "2024-10-02T12:53:26.131Z"
+  },
+  {
+    "id": "a95a70a6-d0d9-4403-be65-cc59b0953698",
+    "name": "Configuration Management",
+    "description": "Implement scalable architecture for future growth",
+    "dueDate": "2025-12-13T14:53:34.599Z",
+    "members": [
+      "88cc0f4a-1055-44b8-b432-fc9b2f0f610f",
+      "d726e70f-bf9c-40b6-9bfa-069c671aadf7",
+      "fcc1099b-369d-454f-b9fc-1ea74afa5e6d",
+      "47ba3b76-4dac-45c7-9b9d-a3386c668e65",
+      "593c9075-657d-4a7c-818e-4b90d5ae95eb"
+    ],
+    "tasks": [
+      "1042c85f-4f6e-4cc5-b5b9-9465fec50f29",
+      "e15be5c4-e752-497f-8e6b-0e53f887e61a",
+      "c78278d0-7913-4395-af37-ec06d23f2fcb",
+      "578ac205-3d52-43ff-8c1a-3cd3ba25fdc5",
+      "0fe1e7c7-5e7c-44ce-99a1-28d9ee1bfced",
+      "646e23cc-bb26-494a-bc16-d3d5b95b257e",
+      "04ea27f5-5c05-4d66-8b07-ad6c522ad34d",
+      "86e4e778-d765-4f4c-867c-be0c3af46c15"
+    ],
+    "createdAt": "2024-01-05T21:00:58.405Z",
+    "updatedAt": "2024-03-06T08:03:59.665Z"
+  },
+  {
+    "id": "ccef63f8-63fc-4b1f-9b72-a8cad2d32bc1",
+    "name": "Service Mesh Implementation",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-07-20T07:55:23.125Z",
+    "members": [
+      "c05342ab-f1db-4f00-80ae-f0bee7993024",
+      "e8639240-b2dc-4b42-88b0-ec4bf0b5b87a",
+      "cd4f23bd-460e-40f5-9f73-892a14d0a89e"
+    ],
+    "tasks": [
+      "9122a551-cd4c-4719-9e9d-ba26eefdbeae",
+      "60ac685b-8785-4b5f-b13f-f530ddbecd76",
+      "d61e1265-cec8-46de-8daa-ea216e1628b0",
+      "e64a5b3e-3f9b-415e-803b-edfb3305bb30",
+      "d4bb0198-8f18-4f1b-b53b-8975083fbed7",
+      "a8c518a7-089c-48ea-aaa8-7e3e4b5ea9b5",
+      "27d43adf-d71e-4c30-8206-cff9bf783e87",
+      "c994e4dd-3621-4232-81f8-148f38e05c4b"
+    ],
+    "createdAt": "2024-01-14T14:13:44.422Z",
+    "updatedAt": "2024-10-05T00:01:23.046Z"
+  },
+  {
+    "id": "518b420a-d4ce-4255-b355-2fc9012670bb",
+    "name": "API Documentation Platform",
+    "description": "Develop robust backend services with proper error handling",
+    "dueDate": "2025-01-30T06:31:16.442Z",
+    "members": [
+      "11b64576-157a-4367-803c-62b42eb2b03a"
+    ],
+    "tasks": [
+      "95ffc60d-7b27-44bb-80f8-81cfc1edb661"
+    ],
+    "createdAt": "2024-01-10T00:47:30.678Z",
+    "updatedAt": "2025-05-10T23:01:13.232Z"
+  },
+  {
+    "id": "b4242faf-ee3e-4f92-ace9-065807d7a70f",
+    "name": "Developer Portal",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-04-15T19:49:22.605Z",
+    "members": [
+      "d8297622-0d39-4424-a841-7752c8585f6b",
+      "e1bfe5a5-b9a0-4bca-bcb2-acf919355f52"
+    ],
+    "tasks": [
+      "429c1e8b-e6e8-4e35-91a2-512062f95e44",
+      "2d6f7ca0-5073-4a8b-a56e-073813627555"
+    ],
+    "createdAt": "2024-01-08T22:49:19.479Z",
+    "updatedAt": "2024-07-05T20:02:38.825Z"
+  },
+  {
+    "id": "719e0c3f-cd85-4a2f-b3bf-bcc0936980d0",
+    "name": "Third-party Integration Hub",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-09-17T13:37:53.971Z",
+    "members": [
+      "31969c3e-c609-4596-81a9-a8f38852f22f",
+      "4566951f-c156-4eb9-932c-d78b9482c771",
+      "45469179-78c0-44d2-a28c-f2d0503a10e1",
+      "34189ec0-6a83-424b-846e-6751832bd8d0",
+      "00afb932-680e-439b-9fa0-2c6264ea94f7"
+    ],
+    "tasks": [
+      "ea3de3d4-29da-4eb8-8453-493199619453",
+      "8ffdab13-dd6d-4560-9aa4-d12800675bc0",
+      "e6bfd43b-eac2-4af9-869d-24551be0eb09",
+      "eae93eaf-594d-42d4-92b4-818a1a4251bf",
+      "47fa53d3-5f07-45b0-add2-03baff137dcc",
+      "789e01c8-1fbe-410d-9898-503348e03688",
+      "555b5275-36f8-4157-b566-7975bddc8be9",
+      "3eb26106-4e3e-4aac-8271-1a297f57653e"
+    ],
+    "createdAt": "2024-01-15T14:49:47.686Z",
+    "updatedAt": "2024-07-22T18:12:27.372Z"
+  },
+  {
+    "id": "743da4e4-f304-42b9-9119-9b6a67547917",
+    "name": "Data Pipeline Architecture",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-05-24T11:44:02.894Z",
+    "members": [
+      "654be910-65c7-4a50-b7b4-d49704921f4b",
+      "7b62f343-e45b-4d67-9b6b-f3e6397263a0",
+      "bf171608-0079-42a5-88a5-273807671724",
+      "90b7404a-86a5-4adf-ac7c-4ad607204558",
+      "20f0ead5-d519-4149-8b5a-7a7ff1c6e54f"
+    ],
+    "tasks": [
+      "80c276b1-b4a3-49e7-8d56-59d628223006"
+    ],
+    "createdAt": "2024-01-14T21:04:36.030Z",
+    "updatedAt": "2024-05-12T10:16:21.016Z"
+  },
+  {
+    "id": "7baf539e-4894-493c-af0c-881503075c0d",
+    "name": "Real-time Data Processing",
+    "description": "Create customizable user interfaces",
+    "dueDate": "2025-03-04T12:30:15.375Z",
+    "members": [
+      "ce3613b9-589c-4b69-bdd4-84cb4f32f815",
+      "a87c58c5-0ea0-4a45-a70e-42c913a9b14f",
+      "bd4c7b6b-6eae-4b22-9460-2b425705b8d5"
+    ],
+    "tasks": [
+      "d2ec417b-e358-4226-b4e4-227e86586163"
+    ],
+    "createdAt": "2024-01-07T00:38:24.380Z",
+    "updatedAt": "2024-02-27T04:04:16.962Z"
+  },
+  {
+    "id": "d656f05f-0e67-44b9-9d98-a0769c6d28c0",
+    "name": "Batch Processing System",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-03-09T19:17:47.026Z",
+    "members": [
+      "988ff487-a87a-4da5-833e-bee5579c9f3d",
+      "81ba2b5f-7d0d-4db3-80dd-932650247e9e",
+      "3acc7f68-9e09-4981-8430-fc84e7774b52",
+      "7ca0da48-0728-438f-8c7c-ea8c7912e4d1"
+    ],
+    "tasks": [
+      "932e8049-260a-44bc-8510-6b8469c7218e",
+      "b94b5411-6f55-4dec-a575-95c3bb646df0"
+    ],
+    "createdAt": "2024-01-13T11:59:21.884Z",
+    "updatedAt": "2024-04-08T03:21:34.957Z"
+  },
+  {
+    "id": "ffbfa960-3374-485a-9ff2-7fbc5d616925",
+    "name": "Data Warehouse Migration",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-06-30T17:44:15.755Z",
+    "members": [
+      "cf8b02e9-6929-46f9-9610-dbb37c282283",
+      "337ffadd-580a-4910-9a51-4f9142409aa0",
+      "7ca0da48-0728-438f-8c7c-ea8c7912e4d1",
+      "664546ad-9c21-4c44-bfb1-83de60b7c13b"
+    ],
+    "tasks": [
+      "6cabee44-8ec4-4b7f-9d4c-a8e6755add4f",
+      "9f7c2e73-be61-4781-9b22-c0be9c7264d2",
+      "e1f6cb84-dfe6-4c10-8342-13afeaad4291"
+    ],
+    "createdAt": "2024-01-13T02:22:02.527Z",
+    "updatedAt": "2025-07-04T10:11:54.667Z"
+  },
+  {
+    "id": "aeb9d417-161b-471f-beaa-a3bdfe1df7d5",
+    "name": "Business Process Automation",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-01-11T12:11:33.798Z",
+    "members": [
+      "cf2ebc0b-be2c-41a7-a796-654afb5e145e",
+      "0e7fce19-dbb1-46c6-93c8-8c1328f7b3a1",
+      "ff994f64-4bd6-4d5c-a1e7-f53bda933451"
+    ],
+    "tasks": [
+      "20c0782f-d469-42ac-8cdb-79a2016cae2f",
+      "050f302c-9116-49a6-9a0f-d96522064ca7",
+      "61b0eda6-9505-4d45-a394-2bda98f1c024",
+      "f53e151f-07aa-4eff-8ed8-e544c2859653",
+      "9ad876c4-c4b0-45e9-b804-d8198db2e20e",
+      "9d15fcf8-c653-4862-9814-62728b94eded",
+      "3278d44c-a84a-4c8e-b3de-e1867c3b9384"
+    ],
+    "createdAt": "2024-01-09T07:20:41.366Z",
+    "updatedAt": "2025-07-28T03:10:52.460Z"
+  },
+  {
+    "id": "1c46ee43-09c3-49cf-90d2-bd3c00a4cce4",
+    "name": "Workflow Engine Development",
+    "description": "Implement scalable architecture for future growth",
+    "dueDate": "2025-10-08T20:08:35.629Z",
+    "members": [
+      "941b689a-6f15-4817-869d-0d741a4b59aa",
+      "e1e79027-e70c-4d44-a165-297f69e09e26",
+      "0b8c1ec8-68f2-4c6c-861b-92b4c7f6d97b",
+      "523f4ccb-4531-4d78-8003-21000f982e1f"
+    ],
+    "tasks": [
+      "c3631b49-f91b-4dd7-9335-fcaaade30887",
+      "72b29d79-9e2e-4020-88a5-5a5e44efe394",
+      "b73cb433-a4c0-42ce-87b4-0292f25f5a35",
+      "194de3f9-9d0e-4c54-8c21-dd190e27be75",
+      "b9c499c9-cf30-4fce-b344-3b52675409fc",
+      "57c1875d-29d0-448a-861c-510c04fe9fa9"
+    ],
+    "createdAt": "2024-01-15T16:34:40.619Z",
+    "updatedAt": "2024-04-06T15:50:47.088Z"
+  },
+  {
+    "id": "fd9ac36a-8aaa-44d4-b232-0508e6143193",
+    "name": "Approval System Implementation",
+    "description": "Implement advanced search capabilities",
+    "dueDate": "2025-03-02T22:03:12.266Z",
+    "members": [
+      "c7807333-e077-4858-98a0-c325caad283a"
+    ],
+    "tasks": [
+      "dc52f117-6d68-47ca-a126-e5d53d6744a2",
+      "24710095-e7ca-442c-a626-38aead7a7049",
+      "fb7e4d8c-99a8-44d6-9330-9deec9664507",
+      "e402d3ea-2b26-46f2-b924-589ed9cec9d5"
+    ],
+    "createdAt": "2024-01-01T05:22:23.749Z",
+    "updatedAt": "2024-09-01T01:52:56.407Z"
+  },
+  {
+    "id": "cfec5908-e7c7-4365-9e02-ce7f0c46703e",
+    "name": "Notification Service",
+    "description": "Design flexible configuration management system",
+    "dueDate": "2025-01-02T16:07:51.872Z",
+    "members": [
+      "d80be29e-5b30-4751-8532-f04a7ff9d966",
+      "a7aa4471-56cd-401f-8d7b-59a5843d74e5"
+    ],
+    "tasks": [
+      "74d7a512-b321-474d-b04a-9a9dd6e0e127",
+      "16fd75c2-00ca-4250-a8b8-82d2a87d3e8d",
+      "942e4e25-2b9f-4aea-bfe1-5ab9aa28c457",
+      "d0526988-f2fa-437a-bd46-7427a7a747e2",
+      "e6a44cd3-6a68-4a00-a230-ef830cf15ffe",
+      "f2281430-438b-4670-9521-4fd006b68f3a",
+      "fb929a45-d818-4b2c-9dad-bcba850c8b27",
+      "f0c0ec33-658e-4757-982d-803ad0f1ffca"
+    ],
+    "createdAt": "2024-01-13T06:31:10.398Z",
+    "updatedAt": "2025-02-04T16:24:40.880Z"
+  },
+  {
+    "id": "e8fa990f-d76f-4eb7-bb49-bfcc536ec900",
+    "name": "Email Service Enhancement",
+    "description": "Build monitoring and alerting systems",
+    "dueDate": "2025-04-18T20:17:16.454Z",
+    "members": [
+      "9a86f543-4785-42d6-a0fd-492beabe7b46",
+      "24e2f6ac-c7d0-4300-a4b4-92d06710e56a",
+      "27728e3b-fedb-40a2-9bac-1cb7462668e6"
+    ],
+    "tasks": [
+      "d853d517-e447-4dee-b4d0-0e3d9d794b9c",
+      "7132a56d-19f9-4ddf-925a-0638c4a3cbec",
+      "77a4cb9c-a323-47f3-b939-3d33385ddc82"
+    ],
+    "createdAt": "2024-01-03T20:16:03.028Z",
+    "updatedAt": "2025-04-17T01:49:50.252Z"
+  },
+  {
+    "id": "843efb16-6317-42ed-996c-9aa6c1049f3a",
+    "name": "SMS Gateway Integration",
+    "description": "Develop robust backend services with proper error handling",
+    "dueDate": "2025-09-09T22:52:21.976Z",
+    "members": [
+      "7b62f343-e45b-4d67-9b6b-f3e6397263a0",
+      "86e1065b-99f9-4bab-9b07-a844be147e87",
+      "8044ff7e-bfa6-4610-92b8-0510b2a60640",
+      "79e21974-6930-437e-93c9-2e13314c4c51"
+    ],
+    "tasks": [
+      "7ded9cc5-85be-48e8-9e3f-2c77a3b2d3ed",
+      "0d8c0a63-7698-47de-8390-f303138e8794",
+      "d78d4791-dee4-4c42-92a4-a6a56dca1bb8",
+      "5dacddf1-a56f-4715-af88-fc476cfaec38",
+      "f53e151f-07aa-4eff-8ed8-e544c2859653",
+      "ff99540f-6442-4703-97b9-2b3df6187c8a",
+      "0ba1bf99-5716-412e-b85e-4120710134e5"
+    ],
+    "createdAt": "2024-01-12T03:35:15.648Z",
+    "updatedAt": "2024-03-31T10:27:54.578Z"
+  },
+  {
+    "id": "2dacea13-b2da-4690-b83b-cd6ba283d57c",
+    "name": "Push Notification System",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-11-27T18:23:28.863Z",
+    "members": [
+      "db17e5f8-f654-44ed-8761-13847490f329",
+      "759c9284-c2d4-4b7c-8bab-9f64f80573e4"
+    ],
+    "tasks": [
+      "c04061ba-6692-44e5-8ce9-55f9142e9719",
+      "a47f92c0-85b8-4fbe-99c2-5e1d22927db5",
+      "fed37e19-a9ce-48a0-8091-6d123130994e",
+      "0876761d-82a0-4083-b7b5-3c020ed09aaa",
+      "9e727242-f77b-4edf-9367-80440a4c0ffc",
+      "82006a4d-271e-4194-8938-03cf87c4ec5e"
+    ],
+    "createdAt": "2024-01-08T06:23:07.391Z",
+    "updatedAt": "2024-05-03T23:49:58.653Z"
+  },
+  {
+    "id": "d7823bce-6b49-4218-917c-a7717bc4152b",
+    "name": "In-app Messaging",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-08-12T21:19:00.383Z",
+    "members": [
+      "6d6e6e72-3d04-40f0-8dfc-338eb7d05ba3",
+      "b5905d60-fa5a-4ab1-ac65-bbf67d15dfd9",
+      "cfdea8a7-0c0a-4760-9e6d-54ea911b9fe4",
+      "0fa1ec8f-4b91-47f2-b77a-1ed84d25f49f",
+      "f2f1977f-2f6c-4814-a1eb-ad91063cb3ee"
+    ],
+    "tasks": [
+      "c53ddaa5-d1c0-425c-ba7a-41541a33fa52",
+      "41ebb32a-ee47-44e3-90e8-305aa2cd65fb",
+      "35dd2477-2371-46a1-a831-2f84fad77823",
+      "b2799364-0e4a-45ba-8737-e10d02204ff6",
+      "e98c3d80-01d6-4c28-af80-497c64adafd9",
+      "5a2daaee-175a-4ca8-8a70-b48466d7f705"
+    ],
+    "createdAt": "2024-01-06T10:56:06.550Z",
+    "updatedAt": "2024-08-26T01:49:58.282Z"
+  },
+  {
+    "id": "c865bb4d-70a2-4294-a670-4ddf79d197a6",
+    "name": "Customer Support Portal",
+    "description": "Develop robust backend services with proper error handling",
+    "dueDate": "2025-10-04T01:51:54.480Z",
+    "members": [
+      "2e6e4038-1f14-49bd-bae1-4ac84a973dac",
+      "90d99460-5652-42b9-96cb-e5654095c1ed",
+      "ee432943-3663-4482-a5aa-ce6794583511"
+    ],
+    "tasks": [
+      "1eff75db-8746-4e18-964f-b4270d22ce00"
+    ],
+    "createdAt": "2024-01-02T01:18:46.267Z",
+    "updatedAt": "2024-02-08T08:08:57.597Z"
+  },
+  {
+    "id": "51f7ed64-cfbe-4303-8378-e27d69ae6d39",
+    "name": "Knowledge Base Platform",
+    "description": "Create accessibility features for all users",
+    "dueDate": "2025-07-13T00:37:21.521Z",
+    "members": [
+      "5b493b86-6a61-4e42-8faa-5ac82df62e1b",
+      "523f4ccb-4531-4d78-8003-21000f982e1f"
+    ],
+    "tasks": [
+      "967d547a-0cbc-4780-a1b1-799827172f83",
+      "349b883e-c8ca-4f29-8ffb-8df85d393088",
+      "e20be515-4c46-4a6a-9300-e0ba8e9b8bfc",
+      "71a80ee1-5feb-437f-9ddb-0ba1d5b61c04",
+      "a7954595-e4cb-463a-94f1-def22fef5e99",
+      "83ec82f5-55ee-4121-882b-cdb8e84ddae9"
+    ],
+    "createdAt": "2024-01-06T06:58:51.488Z",
+    "updatedAt": "2024-03-02T16:46:07.770Z"
+  },
+  {
+    "id": "c9edf7fa-72b1-47d0-8242-e432b2caa168",
+    "name": "FAQ Management System",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-05-05T08:12:56.358Z",
+    "members": [
+      "ff994f64-4bd6-4d5c-a1e7-f53bda933451",
+      "32a9da6b-60cc-472f-9512-5bdc03e04ccb",
+      "46f35702-8f0f-4630-877e-0fd3b8db8ca0",
+      "87d5685a-1f15-4abf-ab0e-537423032a26",
+      "cd3a0087-3c7a-4297-84aa-d7e25ffd74f5"
+    ],
+    "tasks": [
+      "e6db879b-c1df-4fc1-942b-941b37566122",
+      "a4aea3b3-fe04-490f-b5ed-b36f2cebd07d",
+      "3fb015f1-20e4-4dc1-b88f-533c2ae6a978",
+      "49ae6501-3c25-4a5c-94a4-e1b627c8ccb6",
+      "48cee77f-536e-46ab-b4c1-e976b7ad159c",
+      "0ef9c625-43f5-4142-9ad4-efa27b87432c",
+      "bfc2f774-0dc0-491e-90e0-78de46893df8"
+    ],
+    "createdAt": "2024-01-04T15:01:45.519Z",
+    "updatedAt": "2024-08-27T22:06:50.319Z"
+  },
+  {
+    "id": "add00246-e0d9-4ed1-81dd-37ec5101848c",
+    "name": "Ticket Management System",
+    "description": "Create customizable user interfaces",
+    "dueDate": "2025-05-14T09:02:55.990Z",
+    "members": [
+      "bcf9da48-b5cc-4343-8193-eca31a70dd1e"
+    ],
+    "tasks": [
+      "331c2f96-fb7b-46ae-965c-cddb39d10da8"
+    ],
+    "createdAt": "2024-01-09T16:51:04.429Z",
+    "updatedAt": "2024-04-10T01:08:51.085Z"
+  },
+  {
+    "id": "0e6539f5-0461-44b4-b59a-9eb5d97a6df9",
+    "name": "Live Chat Integration",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-06-28T04:18:39.687Z",
+    "members": [
+      "0f964af9-e44f-46c4-b0f2-cb5f6a1cbebb"
+    ],
+    "tasks": [
+      "613d9ef0-b45c-4c2a-98d4-0dac0dc776d0",
+      "1def0873-6d13-46ea-9c73-435cee1147df",
+      "eaaf110e-fad6-4ef3-812c-8860e770c595",
+      "897c2a65-9cde-4f97-ae48-b2452dc9530b",
+      "051d93c2-25bb-4b8b-97ee-449a83561f85"
+    ],
+    "createdAt": "2024-01-09T12:47:29.584Z",
+    "updatedAt": "2025-01-20T19:01:41.146Z"
+  },
+  {
+    "id": "dc10eb9a-3ff3-4333-98c8-9fe8875ed00a",
+    "name": "Video Conferencing Platform",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-09-06T07:38:33.509Z",
+    "members": [
+      "fae3e2dd-2d38-4158-9d7b-cb109e63cf7e",
+      "41aed113-d87c-4984-a867-62bc8419fad5"
+    ],
+    "tasks": [
+      "d2ec417b-e358-4226-b4e4-227e86586163",
+      "2d2d2c66-a312-476b-8e08-a9a2d6e94b80",
+      "d68980f7-78b2-4a35-9343-f0f9a2764290",
+      "2deaa606-bfad-473e-b5f8-ae2db05cfe35",
+      "95ffc60d-7b27-44bb-80f8-81cfc1edb661",
+      "bbcce6a7-cdbf-4d7e-8e17-56c2cc1dcfc6"
+    ],
+    "createdAt": "2024-01-03T02:24:01.788Z",
+    "updatedAt": "2024-05-18T21:06:09.000Z"
+  },
+  {
+    "id": "03a600df-0484-40e4-9707-256cebf64c04",
+    "name": "Screen Sharing Application",
+    "description": "Implement security best practices",
+    "dueDate": "2025-09-24T14:06:22.834Z",
+    "members": [
+      "eb87d7e7-1f39-4b5d-b829-3fa56114fd80"
+    ],
+    "tasks": [
+      "27d9a27c-3c0a-4389-88d4-7ba728d511ff",
+      "71ca7a1e-fedc-482d-9334-2625d34360e6",
+      "953fd9b7-d4a1-418e-98b1-80ae89a5102a",
+      "83c36430-6697-4a25-9e45-cf85ee30dc1d",
+      "ed583c72-8cea-4ac5-8a2f-991c0e4d82f6",
+      "073c2536-73a3-4ea5-98c4-56f4e3969b25"
+    ],
+    "createdAt": "2024-01-02T01:14:26.471Z",
+    "updatedAt": "2024-08-10T08:36:44.652Z"
+  },
+  {
+    "id": "8ee5a0ba-764f-48bb-91b9-044844489ea7",
+    "name": "File Sharing System",
+    "description": "Develop user-friendly documentation and guides",
+    "dueDate": "2025-07-20T21:41:03.928Z",
+    "members": [
+      "0d48f851-5609-4be7-92ba-59d39940890f",
+      "3153559f-3bf1-400f-92f1-214b9e730a6c"
+    ],
+    "tasks": [
+      "5dded729-ffcd-4c62-8ae3-a5bbdb1c08aa",
+      "3f9b7f1a-2431-46d1-8ebd-eb91aa9c6047"
+    ],
+    "createdAt": "2024-01-06T02:45:49.954Z",
+    "updatedAt": "2024-03-18T13:43:42.169Z"
+  },
+  {
+    "id": "95231029-0847-479c-ada7-55f0e71de52e",
+    "name": "Collaboration Tools",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-08-22T00:16:21.717Z",
+    "members": [
+      "cdce7e51-9087-4e12-bffe-d648aab4a886"
+    ],
+    "tasks": [
+      "18b99348-3442-4b2d-9fd2-7327d3b177ab",
+      "166a0b79-ffa9-4b26-aa4c-d3c9560e7551",
+      "f4903420-9bf4-4343-9712-8d1478fe01ff",
+      "924b4d5c-1564-4183-b214-466caffe06c5",
+      "b69559e8-3ee4-4b48-a092-b1b101ad5818"
+    ],
+    "createdAt": "2024-01-14T18:47:22.974Z",
+    "updatedAt": "2024-05-22T17:37:30.555Z"
+  },
+  {
+    "id": "207d5aee-3150-4c7d-9662-feb442f33348",
+    "name": "Team Communication Platform",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-06-26T20:12:27.581Z",
+    "members": [
+      "377cd043-a81b-44c7-9e29-2ee58e990642",
+      "eb22ed91-d6f4-4a73-9e17-7bfd69e94987",
+      "8ef62414-f1c5-4299-9e46-8c18a620b463",
+      "1faef1a6-01f3-4f11-89f1-c4f6afef61cc",
+      "c146e167-2a71-4387-b34e-419a9cf3bb11"
+    ],
+    "tasks": [
+      "71a80ee1-5feb-437f-9ddb-0ba1d5b61c04",
+      "eb2924af-6e53-4ac6-837f-b46d24338851",
+      "7137503a-9538-4839-ad2f-74a115f96780",
+      "8245fdae-9c59-4635-9e4e-1ef2ccf2ee84",
+      "305a0da7-426c-48a4-85cc-817372ac32be",
+      "b77b20bf-2e37-4aea-b574-51e0e09ed722",
+      "4a5f8516-ccf9-4067-92da-9614b4854cf4"
+    ],
+    "createdAt": "2024-01-02T21:55:06.546Z",
+    "updatedAt": "2025-08-21T07:27:22.812Z"
+  },
+  {
+    "id": "facaedcf-b556-4610-b513-d114e85c4bf6",
+    "name": "Calendar Integration",
+    "description": "Build secure communication channels between components",
+    "dueDate": "2025-03-23T01:55:41.527Z",
+    "members": [
+      "64f1cb7f-71fa-4543-b204-0bfbcfe2476f",
+      "de852e40-a453-4176-aebb-a701cb1616c9",
+      "e8a157e5-900d-4e96-a2ea-39f18d91781d"
+    ],
+    "tasks": [
+      "3931aa25-f16c-4336-9e96-0e1b2ed511b7",
+      "ab4e6361-0c6b-488f-a80a-998971354f86",
+      "e1f1c035-f440-4333-9e69-b66432c53d52",
+      "2ca45a53-07c9-493c-b6ff-87456e7ba896"
+    ],
+    "createdAt": "2024-01-08T04:05:42.800Z",
+    "updatedAt": "2024-05-04T23:14:41.541Z"
+  },
+  {
+    "id": "f3a17968-e5ee-4080-b44a-c6b7a8425f5e",
+    "name": "Meeting Scheduler",
+    "description": "Create efficient data processing algorithms",
+    "dueDate": "2025-11-18T20:59:36.938Z",
+    "members": [
+      "06a94ac6-249c-4eb4-bb97-b71b423835f8",
+      "10b7bf36-7ae6-4b14-bdf9-66fc90525c44",
+      "372a5e58-d1c8-497d-9f16-063b976a9bc7",
+      "32b728d4-2879-4ebd-8db7-d9de9f12cc46"
+    ],
+    "tasks": [
+      "f3d2c24d-e84f-4b74-b015-cf5500446efb"
+    ],
+    "createdAt": "2024-01-07T15:10:00.474Z",
+    "updatedAt": "2025-06-13T00:41:42.364Z"
+  },
+  {
+    "id": "87e50788-f53a-4089-9676-5305add1dea7",
+    "name": "Resource Planning Tool",
+    "description": "Design flexible configuration management system",
+    "dueDate": "2025-10-15T15:25:32.788Z",
+    "members": [
+      "71b37509-aa4b-4bda-9655-8b41ed6c3a29",
+      "0e7fce19-dbb1-46c6-93c8-8c1328f7b3a1"
+    ],
+    "tasks": [
+      "fce35bdf-3fab-4a12-9026-82ab93c5da9c",
+      "92628026-66da-4748-a1ee-0dc552fecdfc"
+    ],
+    "createdAt": "2024-01-13T08:27:12.846Z",
+    "updatedAt": "2025-03-11T23:54:48.107Z"
+  },
+  {
+    "id": "085d1696-89db-4986-a48f-c5376089d172",
+    "name": "Budget Management System",
+    "description": "Implement advanced search capabilities",
+    "dueDate": "2025-02-08T01:20:43.432Z",
+    "members": [
+      "bfe2ee1d-3227-4517-a8f5-58f898ad14cd",
+      "a8860667-f423-44b8-80a8-10bc1fead378",
+      "3ffb1ee3-1708-42b1-8818-3e9a90c61361",
+      "e09d41b2-e601-46d6-a78e-e2266a77dfdf"
+    ],
+    "tasks": [
+      "a08f2262-20c8-463d-8d50-4fcd0dc3b744",
+      "30a3f29e-46ce-4f4d-8905-445e6289327f",
+      "a3a047bb-70f8-4d0d-a71b-c976536e1ded"
+    ],
+    "createdAt": "2024-01-15T21:18:21.233Z",
+    "updatedAt": "2024-05-10T08:51:07.359Z"
+  },
+  {
+    "id": "89692261-d031-4528-8934-bda0849ddf9c",
+    "name": "Cost Tracking Application",
+    "description": "Implement data validation and sanitization",
+    "dueDate": "2025-11-22T10:55:54.843Z",
+    "members": [
+      "c59a2bbd-723e-4424-a084-6dffde8c2365",
+      "cd49882e-cf14-4375-910a-c70e5cad7500",
+      "1faef1a6-01f3-4f11-89f1-c4f6afef61cc",
+      "11a8b351-ccff-4072-a863-111dde385b6d",
+      "6a0606a6-c891-41ec-b62b-a319de87e611"
+    ],
+    "tasks": [
+      "a957fa96-3e21-43f3-8797-9a6441b70fba",
+      "db305867-7c42-4c56-9539-c001601abe9a",
+      "d4bcb10a-a190-4d33-baec-39574b349e83"
+    ],
+    "createdAt": "2024-01-12T08:24:05.673Z",
+    "updatedAt": "2024-10-15T11:09:29.528Z"
+  },
+  {
+    "id": "62c61a6f-4071-4f3a-a73c-575d7cd1a8db",
+    "name": "Vendor Management Portal",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-09-16T01:49:27.516Z",
+    "members": [
+      "0ffa3020-b78c-4c91-9411-5fddd1b56ae6",
+      "42116e1f-5fac-42f9-8b01-f0f015fea566"
+    ],
+    "tasks": [
+      "6425fb83-216e-4a3b-adc7-a58edc54437a",
+      "a4bafff8-6304-426e-a5ae-33bee9f275aa",
+      "28181a93-2063-440b-9e8d-9c761222c8ba",
+      "4d613cb6-1aac-4556-a5eb-66b8d6248d8f",
+      "d289960d-7817-43ca-b01b-270674225474",
+      "8bde044c-1c39-442d-b515-4731e80e101e",
+      "abd22c57-3aaa-4e68-81c2-bb241e192a8e"
+    ],
+    "createdAt": "2024-01-07T18:54:28.254Z",
+    "updatedAt": "2025-02-06T13:39:07.331Z"
+  },
+  {
+    "id": "613a222c-afc6-4cdf-a3db-82d88426eace",
+    "name": "Contract Management System",
+    "description": "Create automated deployment pipelines",
+    "dueDate": "2025-11-07T16:06:33.828Z",
+    "members": [
+      "884a4ea2-55c5-49d5-978b-305f08c9a21a",
+      "169572a9-51fb-444b-9d15-41625e1efb57",
+      "c0e7a0ef-18e5-450e-8093-7cd111d3a2b6",
+      "11a8b351-ccff-4072-a863-111dde385b6d"
+    ],
+    "tasks": [
+      "10c1ba65-2e1a-4bc1-ba94-650165d5ac2a"
+    ],
+    "createdAt": "2024-01-03T07:53:57.655Z",
+    "updatedAt": "2024-12-30T13:36:02.720Z"
+  },
+  {
+    "id": "edd98013-d31e-4814-8c32-de82cddacc0a",
+    "name": "Legal Document Automation",
+    "description": "Create a comprehensive solution for managing user data and authentication",
+    "dueDate": "2025-08-17T06:19:17.318Z",
+    "members": [
+      "3a6b69d6-fafa-48d9-afdf-47ed46ece3e5",
+      "8284ddc8-2173-49b3-90b6-c7a6802691f5"
+    ],
+    "tasks": [
+      "e09b1827-09dc-4c33-9240-997303d6c6a8",
+      "d33f194c-d015-4a31-9bee-35f4e03c8932"
+    ],
+    "createdAt": "2024-01-03T07:58:28.464Z",
+    "updatedAt": "2024-01-10T20:14:30.882Z"
+  },
+  {
+    "id": "8fc8a8b6-361d-470a-a411-829ab3894176",
+    "name": "Compliance Monitoring",
+    "description": "Develop user-friendly documentation and guides",
+    "dueDate": "2025-08-21T13:52:11.287Z",
+    "members": [
+      "93ccec96-c765-4221-b2e1-41e1733fbdbe",
+      "72b7c682-2e91-4ee1-a591-62748db6c737",
+      "1a78181a-b72f-47a5-8196-3e3cab1b7df1"
+    ],
+    "tasks": [
+      "44b63531-4a04-4a00-bd70-b9713110d95b",
+      "ee511499-8ccc-4ca9-b4fd-42fd0e0d8112",
+      "9af6b243-78fe-44a4-91dd-701672121391",
+      "ea5e35f7-8393-4fa0-8d32-75b96e7c3b81",
+      "c63e83e8-0897-4a5a-b1ad-661b178f6adf",
+      "ecd27f31-1c65-4a02-91cb-5183b47a1ef6",
+      "44489852-aa46-4004-a53f-48514ce6ac24"
+    ],
+    "createdAt": "2024-01-04T00:29:21.352Z",
+    "updatedAt": "2025-02-12T02:58:39.857Z"
+  },
+  {
+    "id": "feada5e1-5ea8-4d2d-b77e-1893d0736579",
+    "name": "Audit Trail Implementation",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-04-28T20:33:58.876Z",
+    "members": [
+      "7667db0c-2b98-4d33-9f23-74f774719fc0",
+      "f90a3bfd-74fc-4bde-bf21-d165290179ec",
+      "fbc6be0a-d27c-46cb-86e9-a4ccf9cab52a"
+    ],
+    "tasks": [
+      "a9263507-e357-4f13-85b8-2fa31269fe63",
+      "a1c8a963-16f0-4e52-8554-5fe38acaa3d8",
+      "7b9e7fa2-cf58-49b8-aeda-d1c98b13f433"
+    ],
+    "createdAt": "2024-01-02T04:21:43.873Z",
+    "updatedAt": "2025-01-28T04:46:46.710Z"
+  },
+  {
+    "id": "cd03f601-5a9e-4d81-8763-31d8984f5769",
+    "name": "Data Governance Platform",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-06-20T21:22:20.742Z",
+    "members": [
+      "2764584e-5477-4a73-ac2f-f619656af82c",
+      "bd9c28d3-8833-49b3-bba0-cfc0a17a2c36",
+      "2a4506a5-4324-4ef9-899f-5043206feda4"
+    ],
+    "tasks": [
+      "868a7ab3-8c81-4e5d-be39-c8b6054108b5",
+      "1e6d96dd-a740-4e15-a802-4de98b0190b9",
+      "7ded9cc5-85be-48e8-9e3f-2c77a3b2d3ed",
+      "4e1069b2-5948-493a-a421-21682b19570a",
+      "9b7f0e56-ce88-4fed-a3c7-710b0927e913",
+      "0abf0e1f-06b5-4934-bfc4-99c8437ffb00"
+    ],
+    "createdAt": "2024-01-03T04:34:29.669Z",
+    "updatedAt": "2025-08-06T16:42:19.594Z"
+  },
+  {
+    "id": "f3cc21d8-37a2-430d-b9b2-04916f911f4e",
+    "name": "Privacy Management System",
+    "description": "Build real-time data synchronization",
+    "dueDate": "2025-12-29T19:31:47.893Z",
+    "members": [
+      "e9ff99f2-7d80-4b47-ab95-1cc231365f57",
+      "31cbfaad-282a-4ec2-9292-ac14b0e72d7a",
+      "ecbb6fd2-a267-4bf8-a34b-3451d6acf458",
+      "8feb1431-23a5-4065-b8e1-6df64bdb9bb0",
+      "528ac5dc-70a2-4dee-b59b-e32799736845"
+    ],
+    "tasks": [
+      "dc848eef-438a-4944-b4a0-5f2cee59e164",
+      "bf0a4f92-99c1-43b8-b028-85a7cef60d89",
+      "8e8af6d2-22b1-4207-9ffd-818460a9507b",
+      "e6bfd43b-eac2-4af9-869d-24551be0eb09",
+      "10998afb-fa7b-435b-9d07-fb0fb6c2ccc8",
+      "951df0d4-2333-4577-84a4-499d2c77da3c",
+      "3798c5ae-e2a5-4efc-922c-b47438d1a0b6",
+      "19660185-db68-4a35-87be-3a2fd245272a"
+    ],
+    "createdAt": "2024-01-08T05:13:39.413Z",
+    "updatedAt": "2025-01-06T20:54:40.840Z"
+  },
+  {
+    "id": "fffb42e1-8950-489f-8aed-4522a297dd9e",
+    "name": "Consent Management",
+    "description": "Implement comprehensive testing strategies",
+    "dueDate": "2025-03-02T02:28:42.204Z",
+    "members": [
+      "4a423658-0150-49e7-9184-e71455d9263f",
+      "e3bce6e8-c78b-4332-98b3-d45bc1d2c272",
+      "fb948a25-6ab6-4dc3-9a0f-61675ab6ba71"
+    ],
+    "tasks": [
+      "ee511499-8ccc-4ca9-b4fd-42fd0e0d8112",
+      "bafd0255-cbc8-4b51-8847-a385e1a3bb9f",
+      "65dda5a4-6dd9-41af-8810-ace3244a2982",
+      "3f70abde-6eca-4769-952e-714e895626c0",
+      "c822b7b2-52bf-4d14-9e2c-743dd5aefe85",
+      "e8686a97-f5a1-4e45-b31a-56f28fef09ee",
+      "e6eaaeee-fca5-4fd8-870e-8f5bdee96646"
+    ],
+    "createdAt": "2024-01-10T04:48:13.625Z",
+    "updatedAt": "2024-08-24T08:06:06.885Z"
+  },
+  {
+    "id": "ef381678-19eb-4895-a3b3-0bf62556b3dd",
+    "name": "Data Retention Policy",
+    "description": "Create backup and recovery procedures",
+    "dueDate": "2025-12-10T00:18:09.501Z",
+    "members": [
+      "ee82a6ff-c4ea-495c-b844-7bd59b73680b",
+      "92805592-9199-4815-8f0e-bad52a1c9aad",
+      "445214a0-a3de-4f83-9b61-f9c21294a980",
+      "f0371cdf-956a-4ab6-ad79-e6b40fd2f8c6"
+    ],
+    "tasks": [
+      "9e4e5d3f-69ef-473b-8566-ad1ff17b7523"
+    ],
+    "createdAt": "2024-01-14T07:37:42.110Z",
+    "updatedAt": "2024-10-07T14:11:09.420Z"
+  },
+  {
+    "id": "ee40dd3b-22b4-4d5f-ae0e-ed9a86448676",
+    "name": "Archive Management System",
+    "description": "Build performance optimization features",
+    "dueDate": "2025-07-02T16:50:43.611Z",
+    "members": [
+      "cf747e2e-3862-41ef-b3fa-53aa79653854",
+      "e2a45a2c-e361-4fc7-a4d6-4fbec938a759",
+      "e6b952e8-edbe-4e02-ae75-2c10af5c09db",
+      "d8c6e33e-d5c9-4dbb-9015-0ac9ab8a8503",
+      "e56c17da-e461-438f-81ba-ba731f9e7f9f"
+    ],
+    "tasks": [
+      "b5d53997-a531-47f3-be9c-cba9ac65ce30",
+      "9f7c2e73-be61-4781-9b22-c0be9c7264d2",
+      "3d5e8aea-2198-4ebb-91de-71ef5064639a"
+    ],
+    "createdAt": "2024-01-09T03:39:48.019Z",
+    "updatedAt": "2024-04-30T05:34:36.635Z"
+  }
+]

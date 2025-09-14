@@ -47,7 +47,7 @@ const handleValidationErrors = (req: any, res: any, next: any) => {
  *               items:
  *                 $ref: '#/components/schemas/User'
  */
-router.get("/", async (req, res) => {
+router.get("/", authenticateToken, async (req, res) => {
   console.log('[GET] List of users');
 
   try {
@@ -159,8 +159,10 @@ router.post("/login", [
 ], async (req, res) => {
   try {
     const result = await authService.login(req.body.email, req.body.password);
+    console.log('login:result', result)
     res.json(result);
   } catch (error) {
+    console.log('login:error', error)
     res.status(401).json({ message: error.message });
   }
 });
@@ -229,6 +231,7 @@ router.post("/logout", authenticateToken, async (req: AuthenticatedRequest, res)
  */
 router.put(
   "/:id", 
+  authenticateToken,
   [
     param("id").isUUID().withMessage("Invalid ID format"),
     body('name').isLength({ min: 2, max: 100 }).withMessage('Name must be between 2 and 100 characters'),
@@ -294,6 +297,7 @@ router.put(
  */
 router.delete(
   "/:id",
+  authenticateToken,
   [param("id").isUUID().withMessage("Invalid ID format"), handleValidationErrors], 
   async (req, res): Promise<any> => {
     console.log('[DELETE] Delete a task');
@@ -317,6 +321,124 @@ router.delete(
       console.error(error);
       res.status(500).json({ message: "Error deleting user", error: error.message });
     }
+});
+
+
+/**
+ * @swagger
+ * /api/users/verify-email/{token}:
+ *   get:
+ *     tags:
+ *       - User
+ *     summary: Verify user email
+ *     parameters:
+ *       - name: token
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Email verified successfully
+ *       400:
+ *         description: Invalid or expired token
+ */
+router.get("/verify-email/:token", async (req, res) => {
+  try {
+    const { token } = req.params;
+    const result = await authService.verifyEmail(token);
+    
+    if (result.success) {
+      res.status(200).json({ message: result.message });
+    } else {
+      res.status(400).json({ message: result.message });
+    }
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
+/**
+ * @swagger
+ * /api/users/check-token:
+ *   post:
+ *     tags:
+ *       - User
+ *     summary: Check if JWT token is still valid
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Token validity information
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 isValid:
+ *                   type: boolean
+ *                 expiresAt:
+ *                   type: string
+ *                   format: date-time
+ *                 timeRemaining:
+ *                   type: number
+ *                   description: Time remaining in milliseconds
+ *       401:
+ *         description: Invalid token
+ */
+router.get("/check-token", authenticateToken, async (req: AuthenticatedRequest, res) => {
+  try {
+    const token = req.headers.authorization?.replace('Bearer ', '');
+    if (!token) {
+      res.status(401).json({ message: 'No token provided' });
+      return;
+    }
+
+    const result = await authService.checkTokenValidity(token);
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(401).json({ message: error.message });
+  }
+});
+
+/**
+ * @swagger
+ * /api/users/reset-token:
+ *   post:
+ *     tags:
+ *       - User
+ *     summary: Reset JWT token if it expires within 1 hour
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Token reset information
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 newToken:
+ *                   type: string
+ *                   description: New JWT token (only if token was reset)
+ *                 message:
+ *                   type: string
+ *       401:
+ *         description: Invalid token
+ */
+router.post("/reset-token", authenticateToken, async (req: AuthenticatedRequest, res) => {
+  try {
+    const token = req.headers.authorization?.replace('Bearer ', '');
+    if (!token) {
+      res.status(401).json({ message: 'No token provided' });
+      return;
+    }
+
+    const result = await authService.resetTokenIfActive(token);
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(401).json({ message: error.message });
+  }
 });
 
 

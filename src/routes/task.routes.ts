@@ -4,6 +4,7 @@ import { User } from "../entities/User";
 import { Task } from "../entities/Task";
 import { Request, Response } from "express";
 import { body, param, validationResult } from "express-validator";
+import { authenticateToken } from "../middlewares/auth.middleware";
 
 const router = Router();
 
@@ -45,7 +46,7 @@ const handleValidationErrors = (req: any, res: any, next: any) => {
  *               items:
  *                 $ref: '#/components/schemas/Task'
  */
-router.get("/", async (req, res) => {
+router.get("/", authenticateToken, async (req, res) => {
   console.log('[GET] List of tasks');
 
   try {
@@ -84,6 +85,7 @@ router.get("/", async (req, res) => {
  */
 router.post(
   "/", 
+  authenticateToken,
   [
     body("title").isString().notEmpty().withMessage("Title is required"),
     body("description").optional().isString(),
@@ -145,6 +147,7 @@ router.post(
  */
 router.put(
   "/:id",
+  authenticateToken,
   [
     param("id").isUUID().withMessage("Invalid ID format"),
     body("title").optional().isString(),
@@ -213,6 +216,7 @@ router.put(
  */
 router.delete(
   "/:id",
+  authenticateToken,
   [param("id").isUUID().withMessage("Invalid ID format"), handleValidationErrors], 
   async (req, res): Promise<any> => {
     console.log('[DELETE] Delete a task');
