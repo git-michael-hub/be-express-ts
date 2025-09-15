@@ -13,8 +13,18 @@ export interface AuthenticatedRequest extends Request {
     res: Response,
     next: NextFunction
   ): Promise<void> => {
+    // Try to get token from Authorization header first
     const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1]; // Bearer TOKEN
+    let token = authHeader && authHeader.split(' ')[1]; // Bearer TOKEN
+    
+    // If no token in header, try to get from cookies
+    if (!token && req.headers.cookie) {
+      const cookies = req.headers.cookie.split(';');
+      const authCookie = cookies.find(cookie => cookie.trim().startsWith('authToken='));
+      if (authCookie) {
+        token = authCookie.split('=')[1];
+      }
+    }
   
     if (!token) {
       res.status(401).json({ message: 'Access token required' });
@@ -38,6 +48,8 @@ export interface AuthenticatedRequest extends Request {
           if (resetResult.newToken) {
             // Set the new token in response header for client to update
             res.setHeader('X-New-Token', resetResult.newToken);
+            // Also set as cookie for Swagger UI
+            res.setHeader('Set-Cookie', `authToken=${resetResult.newToken}; Path=/; HttpOnly; Secure; SameSite=Strict`);
             req.newToken = resetResult.newToken;
           }
         } catch (refreshError) {

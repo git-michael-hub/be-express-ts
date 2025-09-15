@@ -27,9 +27,10 @@ const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 APP.use(
     cors({
-        origin: 'http://localhost:4200', // Allow only this origin
+        origin: ['http://localhost:4200', 'http://localhost:3000'], // Allow frontend and Swagger UI
         methods: ['GET', 'POST', 'PUT', 'DELETE'],       // Allowed methods
         allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+        credentials: true, // Allow credentials (cookies, authorization headers)
     })
 );
 

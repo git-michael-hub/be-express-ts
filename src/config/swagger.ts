@@ -11,6 +11,7 @@ const swaggerOptions: Options = {
     tags: [
         { name: "User", description: "Operations related to users" },
         { name: "Task", description: "Operations related to tasks" },
+        { name: "Project", description: "Operations related to projects" },
     ],
     servers: [
       {
@@ -18,7 +19,20 @@ const swaggerOptions: Options = {
         // url: "http://52.87.196.43:80", // Replace with your server URL
       },
     ],
+    security: [
+      {
+        bearerAuth: []
+      }
+    ],
     components: {
+        securitySchemes: {
+            bearerAuth: {
+                type: "http",
+                scheme: "bearer",
+                bearerFormat: "JWT",
+                description: "Enter JWT token obtained from login endpoint"
+            }
+        },
         schemas: {
             Task: {
               type: "object",
