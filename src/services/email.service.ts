@@ -15,8 +15,8 @@ export class EmailService {
         this.transporter = nodemailer.createTransport({
             service: 'gmail', // or your email service
             auth: {
-                user: process.env.EMAIL_USER || 'dev.test01.ph@gmail.com',
-                pass: process.env.EMAIL_PASSWORD || 'cxai axfy hlbw wjkk'
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASSWORD
             }
         });
     }
@@ -24,7 +24,7 @@ export class EmailService {
     async sendEmail(emailContent: EmailContent): Promise<void> {
         try {
             const mailOptions = {
-                from: process.env.EMAIL_FROM || 'dev.test01.ph@gmail.com',
+                from: process.env.EMAIL_FROM,
                 to: emailContent.to,
                 subject: emailContent.subject,
                 html: emailContent.html,

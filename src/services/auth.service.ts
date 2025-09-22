@@ -4,46 +4,22 @@ import { AppDataSource } from '../data-source';
 import { EmailService } from './email.service';
 
 export class AuthService {
-    private userRepository = AppDataSource.getRepository(User);
+    private readonly userRepository = AppDataSource.getRepository(User);
+    private readonly emailService = new EmailService();
 
-    private emailService = new EmailService();
-    private readonly VERIFICATION_SECRET = process.env.VERIFICATION_SECRET || 'verification-secret-key';
-    // @TODO
-    private readonly JWT_SECRET = process.env.JWT_SECRET || 'your-super-secret-key-change-in-production';
-    private readonly JWT_EXPIRES_IN = '24h';
+    // key
+    private readonly VERIFICATION_SECRET = process.env.VERIFICATION_SECRET;
 
-    async register(userData: { name: string; email: string; password: string }) {
-        // Check if user already exists
-        const existingUser = await this.userRepository.findOne({
-          where: { email: userData.email }
-        });
-    
-        if (existingUser) {
-          throw new Error('User already exists with this email');
-        }
-    
-        // Create new user
-        const user = this.userRepository.create({
-          ...userData,
-          isEmailVerified: false, // ADDED: Set email verification status
-          emailVerificationToken: this.generateVerificationToken(userData.email) // ADDED: Generate verification token
-        });
+    // JWT
+    private readonly JWT_SECRET = process.env.JWT_SECRET;
+    private readonly JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN;
 
-        await this.userRepository.save(user);
-
-        // ADDED: Send verification email after user creation
-        await this.sendVerificationEmail(user);
-    
-        // Remove password from response
-        const { password, ...userWithoutPassword } = user;
-        return userWithoutPassword;
-    }
 
     private generateVerificationToken(email: string): string {
         return jwt.sign(
           { email, type: 'email-verification' },
           this.VERIFICATION_SECRET,
-          { expiresIn: '24h' }
+          { expiresIn: this.JWT_EXPIRES_IN } as jwt.SignOptions
         );
     }
 
@@ -102,6 +78,41 @@ export class AuthService {
         await this.emailService.sendEmail(emailContent);
     }
 
+    private generateToken(userId: string): string {
+        return jwt.sign(
+          { userId },
+          this.JWT_SECRET,
+          { expiresIn: this.JWT_EXPIRES_IN } as jwt.SignOptions
+        );
+    }
+
+    async register(userData: { name: string; email: string; password: string }) {
+        // Check if user already exists
+        const existingUser = await this.userRepository.findOne({
+          where: { email: userData.email }
+        });
+    
+        if (existingUser) {
+          throw new Error('User already exists with this email');
+        }
+    
+        // Create new user
+        const user = this.userRepository.create({
+          ...userData,
+          isEmailVerified: false, // Set email verification status
+          emailVerificationToken: this.generateVerificationToken(userData.email) // Generate verification token
+        });
+
+        await this.userRepository.save(user);
+
+        // Send verification email after user creation
+        await this.sendVerificationEmail(user);
+    
+        // Remove password from response
+        const { password, ...userWithoutPassword } = user;
+        return userWithoutPassword;
+    }
+
     async verifyEmail(token: string): Promise<{ success: boolean; message: string }> {
       try {
           const decoded = jwt.verify(token, this.VERIFICATION_SECRET) as { email: string; type: string };
@@ -122,9 +133,9 @@ export class AuthService {
               return { success: false, message: 'Email already verified' };
           }
 
-          // ADDED: Update user verification status
+          // Update user verification status
           user.isEmailVerified = true;
-          user.emailVerificationToken = null; // ADDED: Clear the verification token
+          user.emailVerificationToken = null; // Clear the verification token
           await this.userRepository.save(user);
 
           return { success: true, message: 'Email verified successfully' };
@@ -170,14 +181,6 @@ export class AuthService {
           user: userWithoutPassword,
           token
         };
-    }
-
-    private generateToken(userId: string): string {
-        return jwt.sign(
-          { userId },
-          this.JWT_SECRET,
-          { expiresIn: this.JWT_EXPIRES_IN }
-        );
     }
 
     async verifyToken(token: string) {

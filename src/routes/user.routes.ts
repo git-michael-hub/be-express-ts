@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { AppDataSource } from "../data-source";
 import { User } from "../entities/User";
-import { Request, Response } from "express";
 import { body, param, validationResult } from "express-validator";
 import { AuthService } from "../services/auth.service";
 import { AuthenticatedRequest, authenticateToken } from "../middlewares/auth.middleware";

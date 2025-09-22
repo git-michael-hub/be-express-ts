@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { AppDataSource } from "../data-source";
 import { Project } from "../entities/Project";
-import { Request, Response } from "express";
 import { body, param, validationResult } from "express-validator";
 import { authenticateToken } from "../middlewares/auth.middleware";
 
@@ -83,9 +82,9 @@ router.get("/", authenticateToken, async (req, res) => {
  *         description: Project not found
  */
 router.get("/:id/members", authenticateToken, [
-    param("id").isUUID().withMessage("Invalid ID format"),
-    handleValidationErrors
-  ], async (req, res) => {
+  param("id").isUUID().withMessage("Invalid ID format"),
+  handleValidationErrors
+], async (req, res) => {
     console.log('[GET] Get project members');
   
     try {
@@ -104,56 +103,56 @@ router.get("/:id/members", authenticateToken, [
       console.error(error);
       res.status(500).json({ message: "Internal server error", error: error.message });
     }
-  });
+});
   
-  /**
-   * @swagger
-   * /api/projects/{id}/tasks:
-   *   get:
-   *     tags:
-   *       - Project
-   *     summary: Get project tasks
-   *     parameters:
-   *       - name: id
-   *         in: path
-   *         required: true
-   *         schema:
-   *           type: string
-   *     responses:
-   *       200:
-   *         description: Project tasks retrieved successfully
-   *         content:
-   *           application/json:
-   *             schema:
-   *               type: array
-   *               items:
-   *                 $ref: '#/components/schemas/ProjectTasksResponse'
-   *       404:
-   *         description: Project not found
-   */
-  router.get("/:id/tasks", authenticateToken, [
-    param("id").isUUID().withMessage("Invalid ID format"),
-    handleValidationErrors
-  ], async (req, res) => {
-    console.log('[GET] Get project tasks');
-  
-    try {
-      const projectRepository = AppDataSource.getRepository(Project);
-      const projectId = String(req.params.id);
-  
-      const project = await projectRepository.findOneBy({ id: projectId });
-  
-      if (!project) {
-        return res.status(404).json({ message: "Project not found" });
-      }
-  
-      res.status(200).json({ tasks: project.tasks });
-    } 
-    catch (error) {
-      console.error(error);
-      res.status(500).json({ message: "Internal server error", error: error.message });
+/**
+ * @swagger
+ * /api/projects/{id}/tasks:
+ *   get:
+ *     tags:
+ *       - Project
+ *     summary: Get project tasks
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Project tasks retrieved successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/ProjectTasksResponse'
+ *       404:
+ *         description: Project not found
+ */
+router.get("/:id/tasks", authenticateToken, [
+  param("id").isUUID().withMessage("Invalid ID format"),
+  handleValidationErrors
+], async (req, res) => {
+  console.log('[GET] Get project tasks');
+
+  try {
+    const projectRepository = AppDataSource.getRepository(Project);
+    const projectId = String(req.params.id);
+
+    const project = await projectRepository.findOneBy({ id: projectId });
+
+    if (!project) {
+      return res.status(404).json({ message: "Project not found" });
     }
-  });
+
+    res.status(200).json({ tasks: project.tasks });
+  } 
+  catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal server error", error: error.message });
+  }
+});
 
 /**
  * @swagger

@@ -1,5 +1,7 @@
-import express, { Request, Response } from 'express';
 import dotenv from "dotenv";
+dotenv.config(); // necessary to be on the top so all imported can access the data value
+
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import http from 'http';
 import webrtcConnect  from './webrtc/connection';
@@ -14,8 +16,6 @@ import swaggerConfig from "./config/swagger";
 const SPECS = swaggerJsdoc(swaggerConfig);
 
 
-
-dotenv.config();
 
 // Basic HTTP server with Express only
 export const APP = express();
